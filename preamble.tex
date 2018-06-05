@@ -44,7 +44,8 @@
   \expandafter\newcommand\csname problem-#1\endcsname{#2}%
 }
 \newcommand{\pp}[1]{\csname problem-#1\endcsname}
-\newcommand{\p}[1]{\item[#1.] \pp{#1}}
+%\newcommand{\p}[1]{\item[#1.] \pp{#1}}
+\newcommand{\p}[1]{\item \pp{#1}}
 \newcommand{\be}{\begin{enumerate}}
 \newcommand{\ee}{\end{enumerate}}
 \newcommand{\bi}{\begin{itemize}}

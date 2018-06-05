@@ -25,18 +25,23 @@ for every real number $x$.}
 $$f(2^x+2y) = 2^yf(f(x))f(y)$$}
 
 
-% Functional Equations with Unusual Approaches - AFEU
+% Unusual FEs - AFEU
 
 \dpp{AFEU1} {Find all functions $f: \mathbb{R^+}\rightarrow\mathbb{R^+}$ such that
 \[f(xf(y)) = f(x+y)\]}
 
-\dpp{AFEU2} {Let $f:\mathbb{Q}\times\mathbb{Q}\rightarrow\mathbb{Q}$ be a function satisfying the following:
+
+% Integer / Rational FEs - AFEQ
+
+\dpp{AFEQ1}{Let $f:\mathbb{Q}\times\mathbb{Q}\rightarrow\mathbb{Q}$ be a function satisfying the following:
 \begin{enumerate}
     \item For any $x_1,x_2,y_1,y_2$, $f(\frac{x_1+x_2}{2},\frac{y_1+y_2}{2}) \le \frac{f(x_1,y_1)+f(x_2,y_2)}{2}$.
     \item $f(0,0) \le 0$.
     \item For any $x,y$ satisfying $x^2+y^2>100$, $f(x,y)>1$.
 \end{enumerate}
 Prove that there is some positive rational number $b$ such that for any $x,y$, $f(x,y) \ge b\sqrt{x^2+y^2} - \frac{1}{b}$.}
+
+\dpp{AFEQ2}{Determine all functions $f: \mathbb{Z}\to\mathbb{Z}$ satisfying \[f\big(f(m)+n\big)+f(m)=f(n)+f(3m)+2014\] for all integers $m$ and $n$.}
 
 
 % Functional Equations with Restricted Domain - AFER
@@ -393,7 +398,7 @@ Prove that the common external tangents of $\omega_1$ and $\omega_2$ intersect o
 
 % NT Functional Equations - NF}
 
-\dpp{NFE1}{ Find all polynomials $P \in \mathbb{Z}[x]$ such that $P(n) > 0$ and
+\dpp{NFE1}{Find all polynomials $P \in \mathbb{Z}[x]$ such that $P(n) > 0$ and
     \[P(\tau(n))=\tau(P(n))\]
     for all integers $n > 1$, where $\tau(n)$ is the number of divisors of $n$}
 
