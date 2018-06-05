@@ -1,0 +1,47 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage{inputenc}
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{parskip}
+\usepackage{comment}
+\usepackage{fancyhdr}
+\usepackage{pgffor}
+
+
+\newcommand{\theDate}{-date-}
+\newcommand{\setDate}[1]{\renewcommand{\theDate}{#1}}
+
+
+
+%%master function
+%#1 is person, #2 is problems
+\newcommand{\m}[2]{
+\newpage
+\fancyhead[L]{#1}
+\fancyhead[C]{Weakness Training}
+\fancyhead[R]{\theDate}
+\thispagestyle{fancy}
+\section*{Problems}
+\begin{enumerate}
+#2
+\end{enumerate}
+}
+
+\newcommand{\dpp}[2]{%
+  \expandafter\newcommand\csname problem-#1\endcsname{#2}%
+}
+\newcommand{\pp}[1]{\csname problem-#1\endcsname}
+\newcommand{\p}[1]{\item[#1.] \pp{#1}}
