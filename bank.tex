@@ -1,18 +1,592 @@
-\dpp{1}{Suppose $ABCD$ is a parallelogram. Consider circles $w_1$ and $w_2$ such that $w_1$ is tangent to segments $AB$ and $AD$ and $w_2$ is tangent to segments $BC$ and $CD$. Suppose that there exists a circle which is tangent to lines $AD$ and $DC$ and externally tangent to $w_1$ and $w_2$. Prove that there exists a circle which is tangent to lines $AB$ and $BC$ and also externally tangent to circles $w_1$ and $w_2$.}
-\dpp{2}{Consider $m+1$ horizontal and $n+1$ vertical lines ($m,n\ge 4$) in the plane forming an $m\times n$ table. Cosider a closed path on the segments of this table such that it does not intersect itself and also it passes through all $(m-1)(n-1)$ interior vertices (each vertex is an intersection point of two lines) and it doesn't pass through any of outer vertices. Suppose $A$ is the number of vertices such that the path passes through them straight forward,  $B$ number of the table squares that only their two opposite sides are used in the path, and $C$ number of the table squares that none of their sides is used in the path. Prove that
+
+
+\dpp{APL1} {Find all polynomials with real coefficients $P$ such that
+\[P(x) + P(P(x)) = P(x+P(x))\]
+for every real number $x$.}
+
+\dpp{APL2} {Is it true that there exists a polynomial $f(x)$ with rational coefficients, not all integral, with degree $n > 0$, another polynomial $g(x)$ with integer coefficients, and a set $S$ with $n+1$ integers such that $f(m) = g(m)$ for all $m \in S$?}
+
+\dpp{APL3} {Let $F_n$ be the $n$-th Fibonacci number (starting from $F_1=F_2=1$). Given natural $m,n\ge 1$, if polynomial $P$ satisfies $P(k)=F_{m+k}$ for all $k=0,1,...,n$, find the minimum possible value of $\deg P$.}
+
+
+\dpp{AFEG1} {Given some real numbers $a$, $b$, find all functions $f: \mathbb{R}_+\rightarrow\mathbb{R}_+$ which satisfy
+\[f(f(x))+af(x)=b(a+b)x\]}
+
+\dpp{AFEG2} {Find all functions $f: \mathbb{R}\rightarrow\mathbb{R}$ such that
+\[f(x-f(y))=f(f(y))+xf(y)+f(x)-1\]}
+
+\dpp{AFEG3} {Find all $f:\mathbb{R}\rightarrow \mathbb{R}$ such that for all $x,y\in\mathbb{R}$,
+$$f(2^x+2y) = 2^yf(f(x))f(y)$$}
+
+
+\dpp{AFEU1} {Find all functions $f: \mathbb{R^+}\rightarrow\mathbb{R^+}$ such that
+\[f(xf(y)) = f(x+y)\]}
+
+\dpp{AFEU2} {Let $f:\mathbb{Q}\times\mathbb{Q}\rightarrow\mathbb{Q}$ be a function satisfying the following:
+\begin{enumerate}
+    \item For any $x_1,x_2,y_1,y_2$, $f(\frac{x_1+x_2}{2},\frac{y_1+y_2}{2}) \le \frac{f(x_1,y_1)+f(x_2,y_2)}{2}$.
+    \item $f(0,0) \le 0$.
+    \item For any $x,y$ satisfying $x^2+y^2>100$, $f(x,y)>1$.
+\end{enumerate}
+Prove that there is some positive rational number $b$ such that for any $x,y$, $f(x,y) \ge b\sqrt{x^2+y^2} - \frac{1}{b}$.}
+
+
+\dpp{AFER1} {Find all functions $f: \mathbb{R} \rightarrow \mathbb{R}$ such that
+    \[f(ab) = f(a+b)\]
+for all irrational $a, b$.}
+
+\dpp{AFER2} {Find all $f:\mathbb{Z} \rightarrow\mathbb{C}$ such that $$f(x(2y+1))=f(x(y+1))+f(x)f(y)$$}
+
+
+\ssct*{Functional Equations with Weird Functions - AFEW}
+
+\dpp{AFEW1} {Find all functions $f: \mathbb{R}\rightarrow\mathbb{R}$ such that
+\[f(x+y) = \min(x, f(y)) + \max(y, f(x))\]}
+
+\dpp{AFEW2} {Find all functions $f: \mathbb{R}^2\rightarrow\mathbb{R}$ such that the median of $f(a,b), f(b,c)$ and $f(a,c)$ is the median of $a, b, c$ for any real numbers $a$, $b$, $c$.}
+
+\dpp{AFEW3} {Find all functions $f: \mathbb{R}\rightarrow\mathbb{R}$ such that
+\[f(\lfloor x \rfloor y) = f(x) \lfloor f(y) \rfloor\]}
+
+
+\dpp{AIE1} {Prove that for all positive integers $a, b, c$:
+\[a + \sqrt{ab} + \sqrt[3]{abc} \le \frac43(a+b+c)\]}
+
+\dpp{AIE2} {Show that for reals $abc = 1$,
+\[a + b + c \le \sqrt{\frac{(a+2)(b+2)(c+2)}{2}}\]}
+
+
+\dpp{AIEM1} {Find the largest constant $c$ such that
+\[\Big(\sum_{i=1}^nx_i^2\Big)\Big(\sum_{i=1}^ny_i^2\Big)\ge\Big(\sum_{i=1}^nx_iy_i\Big)^2+c\]
+for all real numbers $x_i$, $y_i$.}
+
+\dpp{AIEM2} {Let $n$ be a positive integer. Let $a_1, a_2, ..., a_n, b_1,b_2,...,b_n$ be real numbers such that $a_i,b_i\in [-1,1]$ for all $1\le i\le n$. Prove that $$\left\lvert \prod_{i=1}^n a_i - \prod_{i=1}^n b_i\right\rvert \le \sum_{i=1}^n |a_i-b_i|$$}
+
+\dpp{AIEM3} Let $n\ge 2$ and $x_1,...,x_n$ be non-negative reals summing to $n$. Determine the maxmimum value of $$\left(\sum_{i=1}^n \lfloor x_i \rfloor \right) \left(\sum_{i=1}^n \{x_i\} \right)$$
+
+\dpp{AIEM4} Given a fixed natural $n\ge 2$, find the smallest real $c$ such that for any $a_1,a_@,...,a_n\ge 0$, there exists $i\in\{1,2,...,n\}$ satisfying $a_{i-1}+a_{i+1}\le ca_i$ where $a_0=a_{n+1}=0$.
+
+\dpp{AIEM5} Let $n\ge 2$, reals $a_1,...,a_n$ satisfy $\sum_{i=1}^n |a_i| + \lvert \sum_{i=1}^n a_i\rvert = 1$. Find the maximal and minimal possible value of $\sum_{i=1}^n a_i^2$.
+
+\dpp{AIEM6} Let $a_1,a_2,...,a_n$ be positive reals with sum $n$ ($n\ge 3$), and denote $s=a_1^2+...+a_n^2$. Prove that $$\sum_{i=1}^n \frac{1}{n-1+(n-2)(s-a_i^2} \le \frac{n}{(n-1)^2}$$
+
+\dpp{AIEM7} Let $x_1,x_2,...,x_n$ be $n$ distinct reals. Let $D=\max_{1\le i<j\le n} |x_i-x_j|$. Prove that there exists a permutation $y_1,y_2,...,y_n$ of $x_1,x_2,...,x_n$ such that $$\left\lvert \sum_{i=1}^n iy_i \right\rvert \ge \frac{n-1}{2}D $$
+
+\dpp{AIEM8} We're given a real number $c$, and an integer $m$ such that $m>2$. There exist some reals $x_1, x_2, ..., x_m$ such that $x_1 + x_2 + ... + x_m = 0$, and $\frac{x_1^2+x_2^2+...+x_m^2}m=c$. Find the minimum possible value of $\max\{x_1,x_2,...,x_m\}$.
+
+\dpp{} Suppose we have $n$ distinct real numbers $a_1, a_2,..., a_n$. Consider the $\frac{n(n-1)}{2}$ sums of the form $a_i + a_j$ with $i<j$, arranged in nondecreasing order. Find all $n$ such that there exists $a_1, a_2, ..., a_n$ such that these sums form an arithmetic progression.
+
+\dpp{} Find all positive integers $n$ such that there exists some reals $a_1, a_2, ..., a_n$ such that
+    \[a_1 + 2a_2 + ... + na_n = 6n\]
+    and
+    \[\frac1{a_1}+\frac2{a_2}+...+\frac{n}{a_n}=2+\frac1n\]
+
+
+\ssct*{Big Sums - ASMB}
+
+
+\dpp{} Let $n$ be a positive integer. Let $x_1, x_2,..., x_n$ be a sequence of $n$ real numbers. Say that a sequence $a_1, a_2,..., a_n$ is
+\textit{unimodular} if each $a_i$ is $\pm 1$. Prove that $$\sum a_1a_2...a_n(a_1x_1+a_2x_2+...+a_nx_n)^n= 2^nn!x_1x_2...x_n$$ where the sum is over all $2^n$ unimodular sequences $a_1,a_2,...,a_n$.
+
+
+
+\dpp{} Let $x_1,x_2,...,x_n$ be reals, and let $\sigma_k$ denote its degree $k$ elementary symmetric polynomial (i.e. $$\sigma_k=\sum_{1\le i_1<i_2<...<i_k\le n} x_{i_1}x_{i_2}...x_{i_k}$$
+Prove that $$\prod_{k=1}^n (x_k^2+1) \ge 2\left\lvert \sum_{k=0}^{\left\lfloor \frac{n}{2}\right\rfloor} (-1)^k\sigma_{2k} \right\rvert\cdot \left\lvert \sum_{k=0}^{\left\lfloor \frac{n-1}{2}\right\rfloor} (-1)^k\sigma_{2k+1} \right\rvert$$
+
+
+\ssct*{Sequences - ASQ}
+
+
+\dpp{} Let $n\ge 4$ and $y_1,y_2,...,y_n$ are reals satisfying $$\sum_{k=1}^n y_k=\sum_{k=1}^n ky_k = \sum_{k=1}^n k^2y_k$$ and $$y_{k+3}-3y_{k+2}+3y_{k+1}-y_k=0$$ for $1\le k\le n-3$. Prove that $$\sum_{k=1}^n k^3y_k=0$$
+
+
+\dpp{} Consider the quadratic polynomial $P(x) = 4x^2 + 12x - 3015$, and the sequence of polynomials defined by $P_1(x) = \frac{P(x)}{2016}$ and $P_{n+1}(x) = \frac{P(P_n(x))}{2016}, \forall n \ge 1$.
+\bi
+    \dpp{}[a)] Prove that there exists a real number $r$ such that $P_n(r) < 0$, for all positive integers $n$.
+    \dpp{}[b)] Determine the number of integers $m$ such that $P_n(m) < 0$ for an infinite number of $n$.
+\ei
+
+
+
+\dpp{} Let $a_1,a_2,a_3,...$ be a sequence of positive real numbers satisfying $a_n=a_{n-1}+a_{n-2}$ for all $n\ge 3$. Define $b_1,b_2,...$ as follows:
+    \begin{align*}
+    b_1 &= a_1\\
+    b_n &= a_n + (b_1+b_3+...+b_{n-1})\ \text{for even }n>1\\
+    b_n &= a_n + (b_2+b_4+...+b_{n-1})\ \text{for odd }n>1\\
+    \end{align*}
+    Show that for all $n\ge 3$: 
+    $$\frac{1}{3}<\frac{b_n}{n\cdot a_n}<1$$
+
+
+\ssct*{Others - AFK}
+
+\dpp{} Some real numbers $a_1, a_2,..., a_n$ are given. For each $1 \le i \le n$, let
+\[d_i = \max\{a_j | 1 \le j \le i \} - \in\{a_j | i \le j \le n \}\]
+and let $d = \max\{d_i | 1 \le i \le n \}$
+\bi
+    \dpp{}[a)] Prove that, for any real numbers $x_1 \le x_2 \le ... \le x_n$,
+    \[\max\{|x_i-a_i|\mid1\le i \le n\} \ge \frac d2\]
+    \dpp{}[b)] Show that there are real numbers $x_1 \le x_2 \le ... \le x_n$ such that the equality in $a)$ holds.
+\ei
+
+
+\sct*{Combi}
+\ssct*{Brianians - CBR}
+
+
+\dpp{} A fugitive has escaped from space prison and is hiding somewhere on a planet. You have a lone surveillance satellite that can be deployed anywhere in orbit around the planet. If the fugitive ever comes into direct line-of-sight of the satellite, he'll be considered caught. Suppose the satellite has speed $v$ and the fugitive runs at a max speed $u$. Show that if $\frac vu > 10$, the fugitive can always be caught.
+
+\dpp{} An invisible rabbit is hiding in some cell in an $n \times n$ board. Every minute, the farmer can check $k$ cells - if the rabbit is in any of these cells, it's caught. Otherwise, the rabbit may move to an adjacent cell. What's the minimum $k$ that allows the farmer to have some strategy that ensures that he can catch the rabbit within some finite amount of time?
+
+\ssct*{Boards General - CBD}
+
+\dpp{CBD1} <redacted>
+
+\dpp{CBD2} {A finite set $S$ of unit squares is chosen out of a large grid of unit squares. The squares of $S$ are tiled with isosceles right triangles of hypotenuse 2 so that the triangles do not overlap each other, do not extend past $S$, and all of $S$ is fully covered by the triangles. Additionally, the hypotenuse of each triangle lies along a grid line, and the vertices of the triangles lie at the corners of the squares. Show that the number of triangles must be a multiple of 4.}
+
+
+\dpp{CBD3} {Find the larget number of $L$-tetrominoes (reflections and rotations allowed) that can be placed (aligned with the cells) on an $n \times n$ such that there is a connected (edgewise) path of cells beginning at one corner of the board and ending at the opposite corner.}
+
+\dpp{CBD4} {Consider $m+1$ horizontal and $n+1$ vertical lines ($m,n\ge 4$) in the plane forming an $m\times n$ table. Cosider a closed path on the segments of this table such that it does not intersect itself and also it passes through all $(m-1)(n-1)$ interior vertices (each vertex is an intersection point of two lines) and it doesn't pass through any of outer vertices. Suppose $A$ is the number of vertices such that the path passes through them straight forward,  $B$ number of the table squares that only their two opposite sides are used in the path, and $C$ number of the table squares that none of their sides is used in the path. Prove that
 $$A=B-C+m+n-1.$$}
-\dpp{3}{In a circle $\Gamma_{1}$, centered at $O$, $AB$ and $CD$ are two unequal in length chords intersecting at $E$ inside $\Gamma_{1}$. A circle $\Gamma_{2}$, centered at $I$ is tangent to $\Gamma_{1}$ internally at $F$, and also tangent to $AB$ at $G$ and $CD$ at $H$. A line $l$ through $O$ intersects $AB$ and $CD$ at $P$ and $Q$ respectively such that $EP = EQ$. The line $EF$ intersects $l$ at $M$. Prove that the line through $M$ parallel to $AB$ is tangent to $\Gamma_{1}$}
-\dpp{4}{Let $O$ denote the circumcentre of an acute-angled triangle $ABC$. Let point $P$ on side $AB$ be such that $\angle BOP = \angle ABC$, and let point $Q$ on side $AC$ be such that $\angle COQ = \angle ACB$. Prove that the reflection of $BC$ in the line $PQ$ is tangent to the circumcircle of triangle $APQ$.}
-\dpp{5}{Find all polynomial $P(x)\in \mathbb{R}[x]$ such that $P(x-P(x))=P(x)-P(P(x))$ for all $x\in \mathbb{R}$}
-\dpp{6}{Let it \(k\) be a fixed positive integer. Alberto and Beralto play the following game:
-Given an initial number \(N_0\) and starting with Alberto, they alternately do the following operation: change the number \(n\) for a number \(m\) such that \(m < n\) and \(m\) and \(n\) differ, in its base-2 representation, in exactly \(l\) consecutive digits for some \(l\) such that \(1 \leq l \leq k\).
-If someone can't play, he loses.
 
-We say a non-negative integer \(t\) is a winner number when the gamer who receives the number \(t\) has a winning strategy, that is, he can choose the next numbers in order to guarrantee his own victory, regardless the options of the other player.
-Else, we call it loser.
+\ssct*{Boards of Numbers - CBDN}
 
-Prove that, for every positive integer \(N\), the total of non-negative loser integers lesser than $2^N\) is \(2^{N-\lfloor \frac{log(min\{N,k\})}{log 2} \rfloor}\)}
-\dpp{7}{Find all primes $p$ and $q$ such that $3p^{q-1}+1$ divides $11^p+17^p$.}
-\dpp{8}{The sequence $a_n$ is defined as follows: $a_1=1$ and for any $n\in\mathbb N$, the number $a_{n+1}$ is obtained from $a_n$ by adding $3$ if $n$ is a member of this sequence, and $2$ otherwise. Show that $a_n<(1+\sqrt 2)n$ for all $n$.}
-\dpp{9}{For which positive integers $k$ can we construct a sequence $a_0,a_1,a_2,\dots$, where for each $i$, we have $a_{i+1}=a_{i}+k$ or $a_{i+1}=a_{i}-k$ or $a_{i+1}=a_{i}\times k$ or $a_{i+1}=a_{i}/k$?}
-\dpp{10}{Determine if the following statement is true: given any non-negative $\lambda_{i,j}$, $1\le i<j\le n$, there always exists nonnegative reals $a_i, 1\le i\le n$ such that $|a_i-a_j|\ge \lambda_{i,j}$ for all $1\le i<j\le n$, and $$\sum_{i=1}^n a_i\le \sum_{1\le i<j\le n}\lambda_{i,j}$$}
+\dpp{} An $m$ by $n$ grid contains an integer in each cell. A 'shelf' is defined as a rectangle formed by cells of the grid such that every integer contained in it is strictly greater than the integer contained in any cell that meets the shelf at an edge or a vertex. What's the maximum number of shelves possible?
+
+
+\dpp{} 10000 nonzero digits are written in a 100-by-100 table, one digit per cell. From left to right, each row forms a 100-digit integer. From top to bottom, each column forms a 100-digit integer. So the rows and columns form 200 integers (each with 100 digits), not necessarily distinct. Prove that if at least 199 of these 200 numbers are divisible by 2013, then all of them are divisible by 2013.
+
+
+\dpp{} Let $M$ be a matrix with $r$ rows and $c$ columns. Each entry of $M$ is a nonnegative integer. Let $a$ be the average of all $rc$ entries of $M$. If $r>(10a+10)^c$, prove that $M$ has two identical rows.
+
+
+\dpp{} An \textit{$n$-city} is an $n\times n$ grid of positive integers such that every entry greater than 1 is the sum of an entry in the same row and an entry in the same column. Show that for all $n\ge 1$, the largest entry in an $n$-city is at most $3^{\binom{n}{2}}$.
+
+
+\dpp{} Given integers $m,n$ $(1\le m\le n)$, fill the cells of a $m\times n$ chessboard each with either 1 or -1. You are allowed on each turn to (simultaneously) add 1 to the numbers in every cell of any row/column. If there are $r$ 1's in the chessboard initially, find all $r$ such that regardless of where the 1's are placed initially, it is impossible to make all cells equal using finitely many turns.
+
+\ssct*{Boards of Colors - CBDC}
+
+\dpp{} Suppose you're given an infinite grid, and a finite number of cells are colored black, such that each black cell shares a side with an even number of other black cells. Show that we can color the remaining cells either red or green such that each black cell shares an edge with an equal number of red and greed cells.
+
+
+\dpp{} An $n$ by $n$ board has some cells colored black. An operation is repeatedly performed by taking any cell that's not currently colored black, but has at least $3$ black neighbors, and coloring it black. This operation is performed until no such cell exists. Suppose, at this end state, the board is completely filled with black squares, show that the initial number of black squares is more than $\frac{n^2}{3}$.
+
+
+\dpp{} An 8-by-8 board has each cell colored black or white. The number of black cells is even. We can take two adjacent cells (forming a 1-by-2 or 2-by-1 rectangle), and flip their colors. We call this operation a step. If $C$ is the original coloring, let $S(C)$ be the least number of steps required to make all the unit squares black. Find wthe greatest possible value of $S(C)$.
+
+
+\dpp{} An 4-by-n board has each cell colored black or white. Suppose every white cell shares an edge with at least one black cell. Prove that there are at least $n$ black cells.
+
+
+\dpp{} Let $n>1$ be an even positive integer. A $2n\times 2n$ grid of unit squares is given, and it is partitioned into $n^2$ contiguous $2\times 2$ blocks of unit squares. A subset $S$ of the unit squares satisfies the following properties 
+\begin{enumerate}
+    \dpp{} For any pair of squares $A,B$ in $S$, there is a sequence of squares in $S$ that starts with $S$, ends with $B$, and has any two consecutive elements sharing a side; and
+    \dpp{} In each of the $2\times 2$ blocks of squares, at least one of the four squares is in $S$.
+\end{enumerate}
+In terms of $n$, what is the minimum possible $|S|$?
+
+\ssct*{Word Problems - CWD}
+
+\dpp{} Suppose there exist a string consisting of the letters $a$ and $b$, such that it begins and ends with $a$, and contains at least $1$ $b$. Two operations are given:
+\bi
+    \dpp{}[(Mirror)] Given a palindromic substring of even length, we can remove the second half. (For example, we can turn a substring of $aabaabaa$ into $aaba$)
+    \dpp{}[(Mover)] Given a substring of even length that consists of two equivalent halves, we can remove either half. (For example, we can turn $babbab$ into $bab$).
+\ei
+Find all starting strings that can be reduced, via these two operations, into a string of length $2$.
+
+\dpp{} From any string consisting of the letters $a$ and $b$, we're allowed to either insert or remove the substrings $aaa$, $bb$, or $abab$ at any point of the string. Can we get to the string $ba$ from the string $ab$?
+
+\dpp{} Suppose we have an alphabet of $k$ letters, for some $k > 1$. A word of length $k^n+n-1$ is called $n$-perfect if every length $n$ word appears as a consecutive string of $n$ letters in the word.
+\bi
+    \dpp{}[(a)] For which $n$ does an $n$-perfect word exist?
+    \dpp{}[(b)] For an $n$-perfect word, is it necessarily true that the string formed by the first $n-1$ characters is the same as the one formed by the last $n-1$ characters?
+\ei
+
+\dpp{} Show that we can arrange all $2^n$ of the binary strings of length $n$ into a sequence such that the last $n-1$ characters of each string is the same (including order) as the first $n-1$ characters of the next (here, the first string is considered to be after the last string).
+
+
+\ssct*{Combi Geom - CGG}
+
+\dpp{} Show that any finite set of points in the plane with at least $3$ lines of symmetry has those lines concur.
+
+
+\dpp{} Siah Yong is making a deal with the Davil. He gives the Davil $97$ unordered triples of integers in $[1, 100]$, and $100$ dollars. The Davil then draws a $100$-gon $a_1a_2...a_{100}$ of area $100$, then for each triple $\{k,l,m\}$ that Siah Yong gave, Davil gives back the area of the triangle $a_ka_la_m$ in dollars. What's the minimum $c$ such that Siah Yong can guarantee that he gets at least $c$ dollars back?
+
+
+\dpp{} There are $n$ distinct points in the plane, no three of which are collinear. Suppose that $A$ and $B$ are two of these points. We say that segment $AB$ is \textit{independent} if there is a straight line such that points $A$ and $B$ are on one side of the line, and the other $n − 2$ points are on the other side. What is the maximum possible number of independent segments?
+
+
+\dpp{} A point $P$ in the interior of a convex polyhedron in Euclidean space is called a \textit{pivot point} of the polyhedron if every line through $P$ contains exactly 0 or 2 vertices of the polyhedron. Determine, with proof, the maximum number of pivot points that a polyhedron can contain.
+
+
+\dpp{} Let $S$ be a set of distinct circles in the plane, such that each circle in $S$ contains the center of at least $k$ other circles in $S$. Find the minimum possible value of $|S|$ for:
+\bi 
+    \dpp{}[(a)] $k=2$ 
+    \dpp{}[(b)] $k=3$
+\ei
+
+
+\ssct*{Combi in the Euclidean Plane - CCG}
+
+\dpp{CGG1} Suppose we have some tokens in the plane, not necessarily at distinct points. We're allowed to apply a sequence of moves of the following kind: select a pair of tokens at points $A$ and $B$ and move them both to the midpoint of $A$ and $B$. We say an arrangement of $n$ tokens is \textit{collapsible} if it is possible to end up with all $n$ tokens at the same point after a finite number of moves. Prove that every arrangement of $n$ tokens is collapsible iff $n$ is a power of $2$.
+
+\dpp{CGG2} We are given a finite set of segments of the same line. Prove that we can color each segment red or blue such that, for each point $p$ on the line, the number of red segments containing $p$ differs from the number of blue segments containing $p$ by at most 1.
+
+\dpp{CGG3} Let $m,n$ be integers greater than 1. Prove that $\left\lfloor \frac{mn}{6}\right\rfloor$ nonoverlapping 2-by-3 rectangles can be placed in an $m$-by-$n$ rectangle.
+
+\dpp{CGG4} Let $S$ be a set of $n$ points in the coordinate plane. Say that a pair of points is \textit{aligned} if the two points have the same $x$-coordinate or $y$-coordinate. Prove that $S$ can be partitioned into disjoint subsets such that (a) each of these subsets is a collinear set of points, and (b) at most $n^{3/2}$ unordered pairs of distinct points in $S$ are aligned but not in the same subset.
+
+\dpp{CGG5} Let $S$ be a set of $n$ points in the plane, such that for any point $x \in S$, the second-closest point to $x$ in $S$, $f(x)$, is uniquely defined. Consider a sequence of points $\{a_i\}$ in $S$ defined by $f(a_i)=a_{i+1}$, and $a_1$ can be any point in $S$. We'll call $S$ \textit{good} if there exists some $a_1$ such that every element of $S$ appears in the sequence. For which $n$ does a good $S$ exist?
+
+\dpp{CGG6} Can an equilateral triangle be dissected into finitely many smaller equilateral triangles, no two of which are congruent?
+
+
+\ssct*{Subsets - CSS}
+
+\dpp{} Show there does not exist $2n=1$ subsets $S_1, S_2, ..., S_{2n+1}$ of $\{1, 2, ..., n\}$ such that:
+\bi
+    \dpp{} $6 \nmid |S_i|$ for all $i \in \{1, 2, ..., 2n+1\}$, and
+    \dpp{} $6 \mid |S_i \cap S_j|$ for all $i \ne j \in \{1, 2, ..., 2n+1\}$
+\ei 
+
+
+\dpp{} Let $A=\{z\mid |\operatorname{Re}(z)|\le 1,|\operatorname{Im}(z)|\le 1, z\in \mathbb{C}\}$. $z_1,z_2,...,z_6\in A$ satisfy $z_1+z_2+...+z_6=0$. Show that there exists $1\le i<j<k\le 6$ such that $z_i+z_j+z_k\in A$.
+
+
+\dpp{} Let $n\ge 2$, $A_1,A_2,...,A_{2^n}$ is some permutation of all possible subsets of $\{1,2,...,n\}$. Find the maximal value of $$\sum_{i=1}^{2^n} \vert A_i\cap A_{i+1}\vert \cdot \vert A_i \cup A_{i+1} \vert$$ where $A_{2^n+1} = A_1$.
+
+
+\dpp{} A uniform covering of the natural numbers from $1$ to $n$ is a finite collection of subsets of $\{1,2,3,\dots,n\}$, such that each number belongs to the same number of subsets. A subset can be chosen more than once. A covering must contain at least one set, and it can contain the empty set. For example, $(\{1\},\{1\},\{2,3\},\{2,4\},\{3,4\})$ is a uniform covering of $1$ to $4$. The covering which contains only the empty set is also a uniform covering (each number appears in exactly zero subsets in this union). Given two uniform coverings of $1$ to $n$, we'll define a new uniform covering of $1$ to $n$ by taking the sets from both unions. This covering is called their sum, and is written as $\oplus$. For example, $$(\{1\},\{1\},\{2,3\},\{2,4\},\{3,4\})\oplus(\{1\},\{2\},\{3\},\{4\})=$$ $$(\{1\},\{1\},\{1\},\{2\},\{3\},\{4\},\{2,3\},\{2,4\},\{3,4\})$$
+A uniform covering is called irreducible if it is not the sum of two uniform coverings.\\\\
+Prove that for every $n$, there is a finite number of irreducible uniform coverings of $1$ to $n$.
+
+\ssct*{Graph Theory - CGT}
+
+\dpp{} Given a finite set of points in the plane, each with integer coordinates, is it always possible to color the points red or white so that for any straight line $\ell$ parallel to one of the coordinate axes the difference (in absolute value) between the numbers of white and red points on $\ell$ is not greater than 1?
+
+\dpp{} Given a finite set of points in the plane, each with integer coordinates, is it always possible to color the points red or white so that for any straight line $\ell$ parallel to one of the coordinate axes, $\ell$ contains exactly $2017$ red points? 
+\dpp{} Suppose we have a connected graph such that removing any vertex (and the edges involving it) does not disconnect the graph. Show that for any two vertices $x$, $y$ in the graph, there exists a cyclet hat passes through both.
+\dpp{} Let $G$ be a tournament such that its edges are colored red or blue. Prove that there exists a vertex $v$ of $G$ such that for any other vertex in $G$, there exists a directed path of a single color from $v$ to it.
+\dpp{} $100$ people from $50$ countries, $2$ from each, are standing in a circle. Show that we can always partition these people into two groups such that neither group contains both people from any single country, nor three consecutive people on the circle.
+\dpp{} Given a graph $G$, we say that it is $n$-great if for every $n$ vertices in $G$, there exists a cycl in $G$ that involves only those $n$ vertices. Show that if $G$ is $6$-great, it is $7$-great.
+\dpp{} Let $G$ be a connected graph with at least $3$ vertices, such that removing any vertex does not disconnect $G$. Suppose $G$ contains a path of length $L$. Prove that there exists a cycle of length at least $\sqrt{2L}$.
+
+\dpp{} A graph is called \textit{partitionable} if it may be partitioned into disjoint cycles of at least length $2$. A graph is called \textit{neighborly} if for any set $S$ of $k$ vertices that are pairwise nonadjacent, every vertex not in $S$ is adjacent to some vertex in $S$. Show that a graph is partitionable if and only if it is neighborly.
+
+\dpp{} Let $k$ be a positive integer. Find all positive integers $n$ such that we can find a graph $G$ with $n$ vertices, partitioned into $3$ \textit{compartments}, fulfilling the following conditions:
+    \begin{enumerate}
+        \dpp{} Each compartment has at least one vertex.
+        \dpp{} For any two vertices $X$, $Y$ in different compartments, there are exactly $k$ vertices adjacent to both $X$ and $Y$, and exactly $k$ vertices adjacent to neither $X$ nor $Y$.
+    \end{enumerate}
+
+\ssct*{Lamps - CLP}
+
+\dpp{} Suppose we have $5$ switches, and some lamps, all initially switched off, such that each switch controls a different set of lamps. Show that there exists a set of $3$ of these switches such that flipping each exactly once will switch at least $2$ lamps on.
+
+
+\dpp{} We have $n$ lamps in a row, and some (possibly all) of them are switched on. At each minute, each lamp is switched on if and only if exactly one of its neighbors was previously (so just before the switching) switched off. Does there exist some $k$ such that after $k$ minutes, every lamp is guaranteed to be switched off regardless of initial state, and if so, what is the minimum $k$?
+
+\ssct*{Committees - CCM}
+
+\dpp{} Suppose we have an organization with $n$ members, and we form $n+1$ teams, each consisting of $3$ members, no two of which have identical membership. Prove that there exists two committees which share exactly one member.
+
+\ssct*{Games - CGM}
+
+\dpp{} Let $n$ be a positive integer and let $\omega$ be a circle. Two players $A$ and $B$ take turns to pick a point on $\omega$ that has yet to be colored, and colors it their color, red for $A$ and blue for $B$, until they've each colored exactly $n$ points. The winner is the player that can find the longer arc bounded by two points colored in their color, that doesn't contain any points of the other color. If no such arcs exist, or if the longest arcs for both players are equal in length, the game is a tie. Who has a winning strategy?
+
+
+\dpp{} A table with $m$ rows and $n$ columns is given. In each cell of the table an integer is written. Heisuke and Oscar play the following game: at the beginning of each turn, Heisuke may choose to swap any two columns. Then he chooses some rows and writes down a new row at the bottom of the table, with each cell consisting the sum of the corresponding cells in the chosen rows. Oscar then deletes one row chosen by Heisuke (so that at the end of each turn there are exactly $m$ rows). Then the next turn begins and so on. Prove that Heisuke can assure that, after some finite amount of turns, no number in the table is smaller than the number to the number on his right.
+
+
+\dpp{} There are $n$ piles of stones on a table, such that each contains a different number of stones. Two players $A$ and $B$ play a game. They each take turns to remove some number ($\ge 1$) of stones from any pile, and then they may distribute any number (possibly none) of the remaining stones from that pile among the other piles. The person to remove the last stone from the table wins. For which $n$ does $A$ have a winning strategy for all valid initial configurations?
+
+
+\dpp{} Let $m,n$ be natural numbers. $A$ and $B$ play a game: $A$ has a rectangular grid of size $m\times n$, while $B$ has a rectangular grid of size $1\times n$ (number of rows indicated first), and both players put a Reversi seed onto each cell of their grid, freely deciding which color faces up. $A$ and $B$ takes turns to perform the following, with $A$ starting first: each player may flip any number of Reversi seeds (or none at all) provided each row contains at most one flipped seed. $A$ wins if at any point of time, one of $A$'s rows matches $B$'s row. Prove that $A$ has a winning strategy (regardless of initial board configuration) if and only if $n<2m$. 
+
+\ssct*{Processses - CPR}
+
+
+\dpp{} Let $n$ be a positive integer. Aavid has a card deck consisting of $2n$ cards, each colored with one of $n$ colors such that every color is on exactly two of the cards. The $2n$ cards are randomly ordered in a stack. Every second, he removes the top card from the stack and places the card into an area called the pit. If the other card of that color also happens to be in the pit, Aavid collects both cards of that color and discards them from the pit. Of the $(2n)!$ possible original orderings of the deck, determine how many have the following property: at every point, the pit contains cards of at most two distinct colors.
+
+
+\dpp{} There are $n$ pieces of cheese and $n$ mice on a circle. Each of the mice are initially pinned down and cannot move. When released, a mouse will run clockwise along the circle to the nearest piece of cheese and eat it, and does not move any further (because the cheese was poisoned). The mice are released in some pre-determined order, but the next mouse is only released after the previous mouse has ate a piece of cheese. Show that regardless of the order in which the mice are released, the total distance ran by all the mice is a constant.
+
+
+\dpp{} Given natural number $n$, suppose there are $2^n$ weights. Suppose that at each round, we split the weights into two groups (where each group has the same number of weights) and discard the weights in the lighter group. If the two group happen to be of the same weight, then you may discard either group. After $n$ rounds, only the $N$-th heaviest weight remains (with respect to the initial set of weights). Find the largest possible value of $N$.
+
+
+\dpp{} Given an $n\times n$ grid, there is a chip on the bottom-left corner. Every move, you can remove a chip from a cell and add a chip to the cells above and to the right of the original cell (but you can only add a chip to empty cells). If a chip is along the top or right edge of the board, then you will only add back single chip, while if it was at the top-right corner you will just remove the chip. What is the maximum number of moves that you can take before the board has no chips remaining?
+
+\sct*{Geometry - G}
+\ssct*{Unclassified}
+
+
+\dpp{} Let $ABC$ be a triangle with $AB<AC$. Let the angle bisector of $\angle BAC$ meet $BC$ at $D$, and let $M$ be the midpoint of $BC$. Let $P$ be the foot of the perpendicular from $B$ to $AD$, and extend $BP$ to meet $AM$ at $Q$. Show that $DQ//AB$.
+
+
+\dpp{} $\odot O_1,\odot O_2$ intersect at points $A,B$. Let a line passing through $A$ intersects $\odot O_1,\odot O_2$ at $C,D$ respectively. Suppose $O_1,O_2,C,D$ are concyclic (denote this circle as $\Gamma$). Let $E$ be the intersection of $CO_2$ and $DO_1$, $I$ be the intersection of segment $BE$ and $\Gamma$. Show that $I$ is the common incenter of $\triangle CBO_2$ and $\triangle DBO_1$.
+
+
+\dpp{} Let $AM,CN$ be two altitudes in $\triangle ABC$. $Y$ is the intersection of $AC$ and $MN$. Let point $X$ inside $\triangle ABC$ be such that $MBNX$ is a parallelogram. Show that the angle bisector of $\angle MXN$ is perpendicular to the angle bisector of $\angle MYC$.
+
+
+\dpp{} $ABCD$ is a quadrilateral inscribed in a circle centered at $O$, such that $AB\cdot CD = BC\cdot AD$. Lines $AB,CD$ intersect at $K$ and lines $AC,BD$ intersect at $J$ (and further assume that $O\neq J$). The line through $K$ perpendicular to $OJ$ intersects $BD,AC$ at $E,F$ respectively. The circle with diameter $EF$ intersects segment $OJ$ at $T$. Show that $KT$ bisects $\angle ETF$.
+
+
+\dpp{} Given acute $\triangle ABC$ ($AB>AC$) with circumcenter $O$ and incenter $I$, the midpoints of major arcs $ABC,ACB$ are $M,N$ respectively. If $MN$ intersects $BC$ at $K$, show that $\angle AOI$ and $\angle AKC$ are equal or complementary.
+
+
+\dpp{} Let $O$ be the circumcentre of the acute triangle $ABC$. Let $c_1$ and $c_2$ be the circumcircles of triangles $ABO$ and $ACO$. Let $P$ and $Q$ be points on $c_1$ and $c_2$ respectively, such that $OP$ is a diameter of $c_1$ and $OQ$ is a diameter of $c_2$. Let $T$ be the intesection of the tangent to $c_1$ at $P$ and the tangent to $c_2$ at $Q$. Let $D$ be the second intersection of the line $AC$ and the circle $c_1$. Prove that the points $D$, $O$ and $T$ are collinear.
+
+
+\dpp{} The circles $k_1$ and $k_2$ intersect at points $M$ and $N$. The line $l$ intersects with the circle $k_1$ at points $A$ and $C$ and with circle $k_2$ at points $B$ and $D$, so that points $A, B, C$ and $D$ are on the line $l$ in that order. Let $X$ be a point on line $MN$ such that the point $M$ is between points $X$ and $N$. Lines $AX$ and $BM$ intersect at point $P$ and lines $DX$ and $CM$ intersect at point $Q$. Prove that $PQ//l$.
+
+
+\dpp{} In acute $\triangle ABC$ with height $AD$, let $E,F$ be distinct points on $AD$ such that $DE=DF$ and $E$ is on segment $AD$. $(BEF)$ intersects segments $BC,BA$ again at $K,M(\neq B)$ respectively. $(CEF)$ intersects segments $CB,CA$ at $L,N(\neq C)$ respectively. Prove that $AD,KM,LN$ are concurrent.
+
+% Many Circles
+\dpp{GMC1}{Suppose $ABCD$ is a parallelogram. Consider circles $w_1$ and $w_2$ such that $w_1$ is tangent to segments $AB$ and $AD$ and $w_2$ is tangent to segments $BC$ and $CD$. Suppose that there exists a circle which is tangent to lines $AD$ and $DC$ and externally tangent to $w_1$ and $w_2$. Prove that there exists a circle which is tangent to lines $AB$ and $BC$ and also externally tangent to circles $w_1$ and $w_2$.}
+
+
+\ssct*{Tangent Circles - GTC}
+
+
+\dpp{} Circle $\Omega$ is internally tangent to circles $\omega_1,\omega_2$ (which do not intersect), centered at $O_1,O_2$ respectively. A common internal tangent to $\omega_1,\omega_2$ touches them respectively at $X,Y$. A circle with diameter $XY$ intersects line $O_1O_2$ at points $P,Q$. A common external tangent of $\omega_1,\omega_2$ intersects $\Omega$ at points $A,B$. Show that the perpendicular bisectors of $AB$ and $PQ$ meet on $\Omega$.
+
+\ssct*{Mixtilinear - GMX}
+
+
+\dpp{} Let $A, B, C, D, T$ be points on a circle $\omega$ so that
+
+There exists a circle $\omega_1$ touching $AB, AC$ and touching $\omega$ internally at $T$.
+There exists a circle $\omega_2$ touching $DB, DC$ and touching $\omega$ externally at $T$.
+
+Prove that the common external tangents of $\omega_1$ and $\omega_2$ intersect on $\omega$.
+
+\ssct*{Circles are Tangent - GCT}
+
+
+\dpp{} Given $\triangle ABC$ ($AB>AC$) with orthocenter $H$, let $M$ be the midpoint of $BC$, and let $S$ be on segment $BC$ satisfying $\angle BHM=\angle CHS$. $P$ is the projection of $P$ onto $HS$. Show that $(MPS)$ and $(ABC)$ are tangent.
+
+\ssct*{Variable Points and Loci - GVR}
+
+
+\dpp{} Circles $\Gamma_1,\Gamma_2$ intersect at points $P,Q$. $l$ is a variable line passing through $P$,, and it intersects $\Gamma_1,\Gamma_2$ again at $A,B(\neq P)$ respectively. Let the tangents at $A$ (to $\Gamma_1$) and $B$ (to $\Gamma_2$) intersect at $C$. Find the locus of the circumcenter of $\triangle ABC$ as $l$ is completely rotated around $P$.
+
+\ssct*{Weird Configurations - GWC}
+
+
+\dpp{} Let $A_1A_2A_3A_4$ be a rectangle inscribed inside $\odot O$, $B_i$ is a point on minor arc $A_iA_{i+1}$ for $i=1,2,3,4$ (where $A_5=A_1$), and $B_1B_3//A_1A_4$, $B_2B_4//A_1A_2$. Let $H_i$ be the orthocenter of $\triangle A_iB_{i+1}B_{i+2}$. Prove that $H_1H_2H_3H_4$ is a rectangle.
+
+
+\dpp{} Three congruent circles are inscribed in each of the three angles of $\triangle ABC$. The vertices of $\triangle MNK$ and $\triangle PQR$ lie on different sides of $\triangle ABC$ such that each side of $\triangle MNK$ (and $\triangle PQR$) is tangent to one of the congruent circles. Show that the incircles of $\triangle MNK$ and $\triangle PQR$ are congruent.
+
+\ssct*{Nonstandard - GNS}
+
+\dpp{} Let $A_1,..., A_n$ and $B_1,..., B_n$ be sets of points in the plane. Suppose that for all points $x$, $$D(x, A_1) + D(x, A_2) +... + D(x, A_n)\ge D(x, B_1) + D(x, B_2) + · · · + D(x, B_n)$$ where $D(x, y)$ denotes the distance between $x$ and $y$. Show that the $A_i$'s and the $B_i$'s share the same center of mass.
+
+\sct*{NT - N}
+\ssct*{NT Functional Equations - NFE}
+
+\dpp{} Find all polynomials $P \in \mathbb{Z}[x]$ such that $P(n) > 0$ and
+    \[P(\tau(n))=\tau(P(n))\]
+    for all integers $n > 1$, where $\tau(n)$ is the number of divisors of $n$.
+\dpp{} Determine the minimum value of $f(2018)$, where $f: \mathbb{N}\rightarrow\mathbb{N}$ is a function such that for all $m,n \in \mathbb{N}$,
+\[f(n^2f(m))=m(f(n))^2\]
+\dpp{} Let $d(n)$ denote the number of positive divisors of $n$, Does there exist a bijection $f:\mathbb{N}\rightarrow\mathbb{N}$ on the naturals such that $d\circ f$ is completely multiplicative?\\\\
+A function $g$ is \textit{completely multiplicative} if $g(m)g(n)=g(mn)$ for all $m,n$ within the domain of $g$.
+
+
+\dpp{} Let $d(n)$ denote the number of positive divisors of $n$. Find all functions $f:\mathbb{N}\rightarrow\mathbb{N}$ on the naturals such that
+\[f(d(n)) = d(f(n))\]
+    for all $n \in \mathbb{N}$.
+
+
+\dpp{} Let $f:\mathbb{Q}\rightarrow \mathbb{R}$ be a function such that $f(r+s)-f(r)-f(s)\in \mathbb{Z}$ for all $r,s\in\mathbb{Q}$. Prove that there is a $(p,q)\in \mathbb{N}\times \mathbb{Z}$ such that $$\lvert f\left(\frac{1}{q}\right)-p\rvert \le \frac{1}{2012}$$
+
+
+\dpp{} Find all surjective $f: \mathbb{N}\rightarrow\mathbb{N}$ such that for all distinct $i,j\in\mathbb{N}$, $$\frac{1}{2}(i,j)<(f(i),f(j))<2(i,j)$$
+
+\ssct*{Primitive Roots - NPR}
+
+
+\dpp{} Given a prime $p$, show that
+\[\sum_{i=0}^{p-1} i^k \equiv -1\pmod{p}\]
+iff $p-1 \nmid k$
+
+\ssct*{Powers - NPW}
+
+\dpp{} Let $k \in \mathbb{Z}_+$ and $a_1, a_2, ...$ be a sequence of elements of the set $\{0,1,...,k\}$. Let $b_n = \sqrt[n]{a_1^n+a_2^n+...+a_n^n}$ for $n \in \mathbb{Z}_+$. Prove that if infinitely many of $b_i$ are integers, then every $b_i$ is an integer.
+
+
+\dpp{} Find all positive integers $n$ for which $(x^n + y^n + z^n)/2$ is a perfect square whenever $x$, $y$, and $z$ are integers which sum to zero.
+
+
+\dpp{} Let $p$ be a prime number. Find all triples of integers $(a,b,c)$ such that $a^bb^cc^a=p$.
+
+\ssct*{Primes and Divisibility - NPD}
+
+
+
+\dpp{} 
+    \begin{enumerate}
+        \dpp{} Show that any prime power that divides a binomial coefficient $\binom{n}{k}$ (where $n,k\in \mathbb{N}$, $n\ge k$) is at most $n$.
+        \dpp{} Naturals $n,k$ satisfy $n\ge k^2\ge 64$. Show that $\binom{n}{k}$ has a prime factor larger than $k$.
+    \end{enumerate}
+
+
+\dpp{} Let $p>5$ be a prime. Show that there exists naturals $m,n$ suc that $m+n<p$ and $p|2^m3^n-1$.
+
+
+\dpp{} Show that exists $r\in \mathbb{N}$ such that there are exactly 2017 triples of natural numbers $(x,y,n)$ (where $n\neq 1$) such that $x^n-y^n=r$.
+
+
+\dpp{} Let $p$ be a prime, and let $S_r=1+2+...+r$.
+\begin{enumerate}
+    \dpp{} If $c$ is even, then no pair of naturals $(m,n)$ satisfy $\frac{S_m}{S_n}=p^c$.
+    \dpp{} If $c$ is odd, then there are infinitely many pairs $(m,n)$ such that $\frac{S_m}{S_n}=p^c$.
+\end{enumerate}
+
+
+\dpp{} $A$ is a natural number greater than 1, and $p_1,p_2,...,p_k$ are $k$ distinct natural numbers ($k\ge 1$). Show that exists natural $x\ge 0$ such that the number of naturals $m\in (x,x+A)$ which are coprime to all $p_i$'s does not exceed $A\prod_{i=1}^k \left(1-\frac{1}{p_i}\right)$.
+
+
+\dpp{} Let $F_n$ denote the $n$-th Fibonnaci number (starting from $F_0=0,F_1=1$). Show that $p^k$ divides $F_{p^{k+1}+1}+F_{p^{k+1}-1}-(F_{p^k+1}+F_{p^k-1})$.
+
+
+\dpp{} Given a positive rational number $q$, call a number $x$ \textit{q-charismatic} if
+there exists a positive integer $n$ and integers $\alpha_1, \alpha_2,...,\alpha_n$ such that
+$$x = (q+1)^{\alpha_1}(q+2)^{\alpha_2}...(q+n)^{\alpha_n}$$
+\begin{enumerate}
+    \dpp{} Prove that there exists some $q$ such that every positive rational number is $q$-charismatic.
+    \dpp{} Is it true that for every $q$, if $x$ is $q$-charismatic, $x + 1$ is $q$-charismatic, too?
+\end{enumerate}
+
+\ssct*{Divided Differences - NDD}
+
+
+\dpp{} Let $p$ be an odd prime and $a_1, a_2, ..., a_n$ be integers. Prove that the following two conditions are equivalent:
+\bi
+    \dpp{}[a)] There exists a polynomial $P(x)$ with degree $\le \frac{p-1}{2}$ such that $P(i) \equiv a_i \pmod{p}$ for all $1 \le i \le p$
+
+    \dpp{}[b)] For any natural $d \le \frac{p-1}{2}$,
+    \[\sum_{i=1}^p(a_{i+d}-a_i)^2\equiv 0 \pmod{p}\]
+    where indices are taken $\pmod{p}$.
+\ei
+
+
+\ssct*{NT Polynomials - NPL}
+
+
+\dpp{} \begin{enumerate}
+    \dpp{} A positive integer is called \textit{uphill} if the digits in its decimal representation form a (nonstrictly) increasing sequence from left to right. Suppose a polynomial $P(x)$ with rational coefficients takes on an integer value for each uphill positive integer $x$. Is it necessarily true that $P(x)$ takes on an integer value for each integer $x$?
+    \dpp{} A positive integer is called \textit{downhill} if the digits in its decimal representation form a (nonstrictly) decreasing sequence from left to right. Suppose a polynomial $P(x)$ with rational coefficients takes on an integer value for each uphill positive integer $x$. Is it necessarily true that $P(x)$ takes on an integer value for each integer $x$?
+\end{enumerate}
+
+
+\dpp{} Find all polynomials $P$ with integer coefficients such that for all $a, b \in \mathbb{Z}$, $P(a+b)P(b)$ is a multiple of $P(a)$.
+
+
+\dpp{} Find all polynomials $P(x)\in\mathbb Z[x]$ such that for all $x\in\mathbb Z$ and $n\in\mathbb N$
+$$n\mid P^n(x)-x$$ 
+
+
+\dpp{} Let $P$ be a polynomial with integer coefficients, such that $P(2^k)$ is divisible by $2^k$ for all natural $k$, and there exists a nonzero integer $m$ such that $P(3^k+m)$ is divisible by $3^k$ for all Naturals $k$. Find the maximal number of values $n$ such that $P(n)$ is prime.
+
+
+\dpp{} A polynomial $P$ is \textit{prime} if all its coefficients are elements from the set $\{-1,0,1\}$. For each natural number $n>1$, find the largest $k_n$ such that any prime polynomial $P$ of degree $n$ where $n|P(z) \forall z \in \mathbb{Z}$ has at least $k_n$ terms with a nonzero coefficient.
+
+
+\ssct*{Sequences - NSQ}
+
+\dpp{} For positive integers $a$ and $k$, define the sequence $a_1,a_2,\ldots$ by \[a_1=a,\qquad\text{and}\qquad a_{n+1}=a_n+k\cdot\varrho(a_n)\qquad\text{for } n=1,2,\ldots\] where $\varrho(m)$ denotes the product of the decimal digits of $m$ (for example, $\varrho(413)=12$ and $\varrho(308)=0$). Prove that there are positive integers $a$ and $k$ for which the sequence $a_1,a_2,\ldots$ contains exactly $2009$ different numbers.
+
+
+\dpp{} Suppose there exists a sequence of digits $a_0, a_1, ...$ such that the number $\overline{a_na_{n-1}...a_1a_0}$ is a perfect square for all $n$. Prove that there exists some $i$ such that $a_i = 0$.
+
+
+\dpp{} Zan starts with a rational number $0 < \frac{a}{b} < 1$ written on the board in lowest terms. Then, every second, Zan adds 1 to both the numerator and denominator of the latest fraction and writes the result in lowest terms. Zan stops as soon as he writes a fraction of the form $\frac{n}{n+1}$ for some positive integer $n$. If $\frac{a}{b}$ started in that form, Zan does nothing.
+\begin{enumerate}
+    \dpp{} Prove that Zan will stop in less than $b − a$ seconds.
+    \dpp{} Show that if $\frac{n}{n+1}$ is the final number, then $\frac{n-1}{n}<\frac{a}{b}\le \frac{n}{n+1}$.
+\end{enumerate}
+
+
+\dpp{} Let $a_0,a_1,a_2,...$ be a sequence of nonnegative integers such that $a_2=5$, $a_{2014}=2015$ and $a_n=a_{a_{n-1}}$ for all $n\in\mathbb{N}$. Find all possible values of $a_{2015}$.
+
+
+\ssct*{Rational / Irrational - NRT}
+
+\dpp{} Let $x$ be an irrational number between $0$ and $1$ and let $x = 0.a_1a_2a_3...$ be its decimal representation. For each $k \ge 1$, let $p(k)$ denote the number of distinct sequences $a_{j+1}a_{j+2}...a_{j+k}$ of $k$ consecutive digits in the decimal representation of $x$. Prove that $p(k) \ge k+1$ for every positive integer $k$.
+
+
+\ssct*{Subset Sums - NSS}
+
+\dpp{} Let a fancy number be a number with a prime divisor that’s at least $10^{10^{100}}$. Suppose we’re given an infinite set of fancy numbers $S$. Show that we can pick an infinite subset of $S$, that we call $R$ such that any finite subset of $R$ sums to a fancy number.
+
+
+\dpp{} Find the smallest positive integer that cannot be expressed as the sum of $k$ not-necessarily distinct Fibonnaci numbers.
+
+
+\dpp{} Let $S$ be a set of 100 integers. Suppose that for all $x,y\in \mathbb{N}$ (possibly equal) where $x + y\in S$, either $x$ or $y$ (or both) is in $S$. Prove that the sum of the numbers in $S$ is at most 10,000.
+
+
+\dpp{} Does there exist a set $S\subset \mathbb{Q}$ consisting of rational numbers with the following property: for every integer $n$ there is a unique nonempty, finite subset of $S$, whose elements sum to $n$?
+
+
+\dpp{} Given a natural number $n\ge 2$, determine the smallest natural number $k$ such that among $k$ distinct integers, there are two whose sum or difference is divisible by $n$.
+
+
+\dpp{} Let $k,n$ be natural numbers such that $1\le k\le n-2$ and $n\ge 4$. Consider all possible triplets of naturals $(a,b,c)$ where $k\le a<b<c\le n$; if $a+b>c$ we say the triplet is \textit{good}, otherwise it is \textit{bad}. If there are an equal number of good and bad triplets, we say the pair $(k,n)$ is \textit{balanced}. Find all balanced pairs $(k,n)$ or demonstrate no balanced pairs exist.
+
+
+\ssct*{Combi NT - CNT}
+
+
+\dpp{} Find the smallest positive integer $n$ that satisfies the following: we can color each positive integer with one of $n$ colors such that the equation $w+6x=2y+3z$ have no solutions in the positive integers with all of $w,x,y,z$ the same color.
+
+
+\dpp{} Let $a_1,a_2,...,a_{100}$ be a sequence of integers. Initially, $a_1=1,a_2=-1$ and the remaining numbers are 0. After every second, we perform the following process on the sequence: for $i=1,2,...,99$, replace $a_i$ with $a_i+a_{i+1}$ and replace $a_{100}$ with $a_{100}+a_1$ (all of these are done simultaneously). Show that $\max\{|a_i|\}$ is unbounded as time goes by.
+
+
+\dpp{} Nine distinct positive integers are arranged in a circle such that the product of any two non-adjacent numbers in the circle is a multiple of $n$ and the product of any two adjacent numbers in the circle is not a multiple of $n$, where $n$ is a fixed positive integer. Find the smallest possible value for $n$.
+
+
+\dpp{} Let $n$ be a positive integer such that there exists a positive integer less than $\sqrt{n}$ that does not divide $n$. Let $(a_1,...,a_n)$ be an arbitrary permutation of $1,2,...,n$. Let $a_{i_1}<...<a_{i_k}$ be its maximal increasing subsequence and let $a_{j_1}>...>a_{j_l}$ be its maximal decreasing subsequence. Prove that at least one of these two subsequences contains at least one number that does not divide $n$.
+
+
+\ssct*{Construction - NCS}
+
+
+\dpp{} Prove that for all naturals $n$, there exists $a,b\in\mathbb{Z}$ such that $n|4a^2+9b^2-1$.
+
+
+\dpp{} Given a $K_{13}$, is it possible to label the edges with distinct natural numbers such that the edges of any Hamiltonian cycle has labels that sum to 2017?
+
+\dpp{} Let $n$ be an even positive integer. Show that there is a permutation $\left(x_{1},x_{2},\ldots,x_{n}\right)$ of $\left(1,\,2,\,\ldots,n\right)$ such that for every $i\in\left\{1,\ 2,\ ...,\ n\right\}$, the number $x_{i+1}$ is one of the numbers $2x_{i}$, $2x_{i}-1$, $2x_{i}-n$, $2x_{i}-n-1$, treating $x_{n+1}$ as $x_{1}$.
+
+\ssct*{Unclassified}
+
+
+\dpp{} For every positive integer $n$, let $s_2(n)$ denote the sum of digits when $n$ is expressed in binary. Show that the set
+$$S = \left\{ \frac{a}{b} \ \middle\vert \ \frac{a}{b}=\frac{s_2(a)}{s_2(b)},\ a,b\in \mathbb{N} \right\}$$ 
+has infinitely many elements.
+
+
+\dpp{} We'll call a positive integer with distinct digits \textit{bright} if it's either less than $10$, or it has a bright factor that can be obtained by removing one of the digits of the original number. What's the largest bright number?
+
+
+\dpp{} Find all integers $k\ge 5$ for which there is a positive integer $n$ with exactly $k$ positive divisors $1=d_1<d_2<...<d_k=n$, and $$d_2d_3+d_3d_5+d_5d_2=n$$.
+
+
+\sct*{Wut}
+
+
+\dpp{} Let $n$ be a natural number. For a $n$-tuple $\bar{a}= (a_1,...,a_n)$, denote $$S(\bar{a}) = \sum_{i=1}^n3^{i-1}a_i,\quad T(\bar{a}) = \sum_{i=1}^n \frac{a_i}{3^{i-1}}$$
+Let $m,k$ be natural numbers satisfying $m\ge 2k$. Define $A$ to be the following set:
+$$A=\left\{ \bar{a} = (a_1,...,a_n) \mid S(\bar{A})=k, a_i\in \mathbb{Z}, |a_i|\le m \text{ for all } i=1,...,n\right\}$$
+Prove that $$\frac{\sum_{\bar{a}\in A} T(\bar{a})}{|A|}\le k$$
+
+\end{document}
