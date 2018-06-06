@@ -24,6 +24,11 @@ for every real number $x$.}
 \dpp{AFEG3} {Find all $f:\mathbb{R}\rightarrow \mathbb{R}$ such that for all $x,y\in\mathbb{R}$,
 $$f(2^x+2y) = 2^yf(f(x))f(y)$$}
 
+\dpp{AFEG4}{Find all functions $f:\mathbb{R}\rightarrow \mathbb{R}$ such that $f(0) \in \mathbb Q$ and
+\[f(x+f(y)^2 ) = {f(x+y)}^2.\]}
+
+\dpp{AFEG5}{Find all functions $f:\mathbb{R^+}\rightarrow\mathbb{R^+}$ such that
+$$\frac{x+f(y)}{xf(y)}=f(\frac{1}{y}+f(\frac{1}{x}))$$for all positive real numbers $x$ and $y$.}
 
 % Unusual FEs - AFEU
 
@@ -95,6 +100,13 @@ for all real numbers $x_i$, $y_i$.}
 
 \dpp{AIEM9} {Determine if the following statement is true: given any non-negative $\lambda_{i,j}$, $1\le i<j\le n$, there always exists nonnegative reals $a_i, 1\le i\le n$ such that $|a_i-a_j|\ge \lambda_{i,j}$ for all $1\le i<j\le n$, and $$\sum_{i=1}^n a_i\le \sum_{1\le i<j\le n}\lambda_{i,j}$$}
 
+\dpp{AIEM10}{Suppose that $-1 \leq x_1,x_2,...,x_n \leq 1$ are real numbers such that $x_1 + x_2 +...+ x_n =0 $.
+Prove there exists a permutation $\sigma$ of $\{1,2,...,n\}$ such that for every $1\leq p \leq q \leq n$
+
+$|x_{\sigma(p)} +...+x_{ \sigma(q)}| < 2- \frac {1}{n}$
+
+Also prove that the expression on the right side cannot be replaced by $2-\frac {4}{n}$}
+
 
 % Sums - ASM
 
@@ -165,7 +177,7 @@ and let $d = \max\{d_i | 1 \le i \le n \}$
 \dpp{CBD4} {Consider $m+1$ horizontal and $n+1$ vertical lines ($m,n\ge 4$) in the plane forming an $m\times n$ table. Cosider a closed path on the segments of this table such that it does not intersect itself and also it passes through all $(m-1)(n-1)$ interior vertices (each vertex is an intersection point of two lines) and it doesn't pass through any of outer vertices. Suppose $A$ is the number of vertices such that the path passes through them straight forward, $B$ number of the table squares that only their two opposite sides are used in the path, and $C$ number of the table squares that none of their sides is used in the path. Prove that
 $$A=B-C+m+n-1.$$}
 
-\dpp{CBD5} {Consider a $n \times n$ board of unit squares. We place several isosceles right triangles with length $1$ legs on the board such that no two intersect (except possibly on their hypotenuses), and each covers exactly half of one cell each. Each internal edge of the board is covered by exactly one right triangle. What's the maximum number of squares that don't contain triangles?}
+\dpp{CBD5} {Consider a $n \times n$ board of unit squares. We place several isosceles right triangles with length $1$ legs on the board such that no two intersect (except possibly on their hypotenuses, or on their vertices), and each covers exactly half of one cell each. Each edge of the board is covered by exactly one right triangle. What's the maximum number of squares that don't contain triangles?}
 
 \dpp{CBD6} {Let a $P$-piece be a parallelogram with sidelengths $1$ and $\sqrt{2}$, such that one of its internal angles is $45^\circ$. Suppose we tile an $n$ by $n$ board with $P$-pieces. Show that the area left uncovered is at least $n$.}
 
@@ -329,7 +341,7 @@ If someone can't play, he loses.
 We say a non-negative integer $t$ is a winner number when the player who receives the number $t$ has a winning strategy, that is, he can choose the next numbers in order to guarrantee his own victory, regardless the options of the other player.
 Else, we call it a loser.
 
-Prove that for every positive integer $N$, the total of non-negative loser integers smaller than $2^N$ is $2^{N-\lfloor \frac{\log(\min\{N,k\})}{\log 2} \rfloor}$.}
+Prove that for every positive integer $N$, the total number of non-negative loser integers smaller than $2^N$ is $2^{N-\lfloor \frac{\log(\min\{N,k\})}{\log 2} \rfloor - 1}$.}
 
 
 % Processses - CP}
@@ -446,6 +458,9 @@ A function $g$ is \textit{completely multiplicative} if $g(m)g(n)=g(mn)$ for all
 
 \dpp{NFE6}{Find all surjective $f: \mathbb{N}\rightarrow\mathbb{N}$ such that for all distinct $i,j\in\mathbb{N}$, $$\frac{1}{2}(i,j)<(f(i),f(j))<2(i,j)$$}
 
+\dpp{NFE7}{Find all surjective functions $f:\mathbb{N}\to\mathbb{N}$ such that for all positive integers $a$ and $b$, exactly one of the following equations is true:
+\begin{align*} f(a)&=f(b), \\ f(a+b)&=\min\{f(a),f(b)\}. \end{align*}
+}
 
 % Primitive Roots - NP}
 
@@ -543,6 +558,8 @@ $$n\mid P^n(x)-x$$}
 
 \dpp{NSQ6}{The sequence $a_n$ is defined as follows: $a_1=1$ and for any $n\in\mathbb N$, the number $a_{n+1}$ is obtained from $a_n$ by adding $3$ if $n$ is a member of this sequence, and $2$ otherwise. Show that $a_n<(1+\sqrt 2)n$ for all $n$.}
 
+\dpp{NSQ7}{For any integer $n$, we define its \textit{exponent set} to be the multiset consisting of the exponents in its prime factorization. For example, the exponent set of 180 is $\{1,2,2\}$, since the factorization of $180 = 2^23^25^1$. Suppose we're given an arithmetic progression of positive integers $(a_n)$, defined by $a_n = dn+r$ for some rationals $d$, $r$. Find all arithmetic progressions of positive integers $(b_n)$ such that for all positive integers $n$, $a_n$ and $b_n$ have the same exponent set.}
+
 
 % Rational / Irrational - NR}
 
@@ -583,8 +600,28 @@ $$n\mid P^n(x)-x$$}
 
 \dpp{NCS3}{ Let $n$ be an even positive integer. Show that there is a permutation $\left(x_{1},x_{2},\ldots,x_{n}\right)$ of $\left(1,\,2,\,\ldots,n\right)$ such that for every $i\in\left\{1,\ 2,\ ...,\ n\right\}$, the number $x_{i+1}$ is one of the numbers $2x_{i}$, $2x_{i}-1$, $2x_{i}-n$, $2x_{i}-n-1$, treating $x_{n+1}$ as $x_{1}$}
 
+% Easyish
+\dpp{NCS4}{Several distinct real numbers are written on a blackboard. Peter wants to create an algebraic expression such that among its values there would be these and only these numbers. He may use any real numbers, brackets, signs $+, -, \times$ and a special sign $\pm$. Usage of $\pm$ is equivalent to usage of $+$ and $-$ in all possible combinations. For instance, the expression $5 \pm 1$ results in $\{4, 6\}$, while $(2 \pm 0.5) \pm 0.5$ results in $\{1, 2, 3\}$.
+Can Peter construct an expression if the numbers on the blackboard are :
+(a) $1, 2, 4$ ? ($2$ points)
+(b) any $100$ distinct real numbers ?}
 
-% Unclassifie}
+\dpp{NCS5}{Is there a sequence $a_{1}, . . . , a_{2016}$ of positive integers, such that every sum
+$$a_{r} + a_{r+1} + . . . + a_{s-1} + a_{s}$$(with $1 \le r \le s \le 2016$) is a composite number, but:
+a) $GCD(a_{i}, a_{i+1}) = 1$ for all $i = 1, 2, . . . , 2015$;
+b) $GCD(a_{i}, a_{i+1}) = 1$ for all $i = 1, 2, . . . , 2015$ and $GCD(a_{i}, a_{i+2}) = 1$ for all $i = 1, 2, . . . , 2014$?
+$GCD(x, y)$ denotes the greatest common divisor of $x$, $y$.}
+
+
+% Binary Stuff - NBN
+
+\dpp{NBN1}{(a) Prove that every positive integer $n$ can be written uniquely in the form \[n=\sum_{j=1}^{2k+1}(-1)^{j-1}2^{m_j},\]where $k\geq 0$ and $0\le m_1<m_2\cdots <m_{2k+1}$ are integers.
+This number $k$ is called the \textit{weight} of $n$.
+
+(b) Find (in closed form) the difference between the number of positive integers at most $2^{2017}$ with even weight and the number of positive integers at most $2^{2017}$ with odd weight.}
+
+
+% Unclassified
 
 \dpp{Unclassified1}{ For every positive integer $n$, let $s_2(n)$ denote the sum of digits when $n$ is expressed in binary. Show that the set
 $$S = \left\{ \frac{a}{b} \ \middle\vert \ \frac{a}{b}=\frac{s_2(a)}{s_2(b)},\ a,b\in \mathbb{N} \right\}$$ 
