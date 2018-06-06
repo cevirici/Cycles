@@ -23,6 +23,8 @@
 
 \newcommand{\theDate}{-date-}
 \newcommand{\setDate}[1]{\renewcommand{\theDate}{#1}}
+\newcommand{\theCycle}{-cycle-}
+\newcommand{\setCycle}[1]{\renewcommand{\theCycle}{#1}}
 
 
 
@@ -31,7 +33,7 @@
 \newcommand{\m}[2]{
 \newpage
 \fancyhead[L]{#1}
-\fancyhead[C]{Weakness Training}
+\fancyhead[C]{Cycle \theCycle}
 \fancyhead[R]{\theDate}
 \thispagestyle{fancy}
 \section*{Problems}

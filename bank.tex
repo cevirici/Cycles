@@ -165,12 +165,14 @@ and let $d = \max\{d_i | 1 \le i \le n \}$
 \dpp{CBD4} {Consider $m+1$ horizontal and $n+1$ vertical lines ($m,n\ge 4$) in the plane forming an $m\times n$ table. Cosider a closed path on the segments of this table such that it does not intersect itself and also it passes through all $(m-1)(n-1)$ interior vertices (each vertex is an intersection point of two lines) and it doesn't pass through any of outer vertices. Suppose $A$ is the number of vertices such that the path passes through them straight forward, $B$ number of the table squares that only their two opposite sides are used in the path, and $C$ number of the table squares that none of their sides is used in the path. Prove that
 $$A=B-C+m+n-1.$$}
 
+\dpp{CBD5} {Consider a $n \times n$ board of unit squares. We place several isosceles right triangles with length $1$ legs on the board such that no two intersect (except possibly on their hypotenuses), and each covers exactly half of one cell each. Each internal edge of the board is covered by exactly one right triangle. What's the maximum number of squares that don't contain triangles?}
+
 
 % Boards of Numbers - CBDN
 
 \dpp{CBDN1} {An $m$ by $n$ grid contains an integer in each cell. A 'shelf' is defined as a rectangle formed by cells of the grid such that every integer contained in it is strictly greater than the integer contained in any cell that meets the shelf at an edge or a vertex. What's the maximum number of shelves possible?}
 
-\dpp{CBDN2}{ 10000 nonzero digits are written in a 100-by-100 table, one digit per cell. From left to right, each row forms a 100-digit integer. From top to bottom, each column forms a 100-digit integer. So the rows and columns form 200 integers (each with 100 digits), not necessarily distinct. Prove that if at least 199 of these 200 numbers are divisible by 2013, then all of them are divisible by 2013}
+\dpp{CBDN2}{ 10000 nonzero digits are written in a 100-by-100 table, one digit per cell. From left to right, each row forms a 100-digit integer. From top to bottom, each column forms a 100-digit integer. So the rows and columns form 200 integers (each with 100 digits), not necessarily distinct. Prove that if at least 199 of these 200 numbers are divisible by 2013, then all of them are divisible by 2013.}
 
 \dpp{CBDN3}{ Let $M$ be a matrix with $r$ rows and $c$ columns. Each entry of $M$ is a nonnegative integer. Let $a$ be the average of all $rc$ entries of $M$. If $r>(10a+10)^c$, prove that $M$ has two identical rows}
 
@@ -315,11 +317,13 @@ Prove that for every $n$, there is a finite number of irreducible uniform coveri
 \dpp{CGM4}{ Let $m,n$ be natural numbers. $A$ and $B$ play a game: $A$ has a rectangular grid of size $m\times n$, while $B$ has a rectangular grid of size $1\times n$ (number of rows indicated first), and both players put a Reversi seed onto each cell of their grid, freely deciding which color faces up. $A$ and $B$ takes turns to perform the following, with $A$ starting first: each player may flip any number of Reversi seeds (or none at all) provided each row contains at most one flipped seed. $A$ wins if at any point of time, one of $A$'s rows matches $B$'s row. Prove that $A$ has a winning strategy (regardless of initial board configuration) if and only if $n<2m$}
 
 \dpp{CGM5}{Let \(k\) be a fixed positive integer. Alberto and Beralto play the following game:
-Given an initial number \(N_0\) and starting with Alberto, they alternately do the following operation: change the number \(n\) for a number \(m\) such that \(m < n\) and \(m\) and \(n\) differ, in its base-2 representation, in exactly \(l\) consecutive digits for some \(l\) such that \(1 \leq l \leq k\).
+Given an initial number \(N_0\) and starting with Alberto, they take turns to perform the following operation: change the number \(n\) into a number \(m\) such that \(m < n\) and \(m\) and \(n\) differ, in their base-2 representations, in exactly \(l\) consecutive digits for some \(l\) such that \(1 \leq l \leq k\).
 If someone can't play, he loses.
-We say a non-negative integer $t$ is a winner number when the gamer who receives the number $t$ has a winning strategy, that is, he can choose the next numbers in order to guarrantee his own victory, regardless the options of the other player.
-Else, we call it loser.
-Prove that, for every positive integer $N$, the total of non-negative loser integers smaller than $2^N$ is $2^{N-\lfloor \frac{log(min\{N,k\})}{log 2} \rfloor}$}
+
+We say a non-negative integer $t$ is a winner number when the player who receives the number $t$ has a winning strategy, that is, he can choose the next numbers in order to guarrantee his own victory, regardless the options of the other player.
+Else, we call it a loser.
+
+Prove that for every positive integer $N$, the total of non-negative loser integers smaller than $2^N$ is $2^{N-\lfloor \frac{\log(\min\{N,k\})}{\log 2} \rfloor}$.}
 
 
 % Processses - CP}
@@ -356,7 +360,7 @@ Prove that, for every positive integer $N$, the total of non-negative loser inte
 
 \dpp{GTC1}{ Circle $\Omega$ is internally tangent to circles $\omega_1,\omega_2$ (which do not intersect), centered at $O_1,O_2$ respectively. A common internal tangent to $\omega_1,\omega_2$ touches them respectively at $X,Y$. A circle with diameter $XY$ intersects line $O_1O_2$ at points $P,Q$. A common external tangent of $\omega_1,\omega_2$ intersects $\Omega$ at points $A,B$. Show that the perpendicular bisectors of $AB$ and $PQ$ meet on $\Omega$}
 
-\dpp{GTC2}{In a circle $\Gamma_{1}$, centered at $O$, $AB$ and $CD$ are two unequal in length chords intersecting at $E$ inside $\Gamma_{1}$. A circle $\Gamma_{2}$, centered at $I$ is tangent to $\Gamma_{1}$ internally at $F$, and also tangent to $AB$ at $G$ and $CD$ at $H$. A line $l$ through $O$ intersects $AB$ and $CD$ at $P$ and $Q$ respectively such that $EP = EQ$. The line $EF$ intersects $l$ at $M$. Prove that the line through $M$ parallel to $AB$ is tangent to $\Gamma_{1}$}
+\dpp{GTC2}{In a circle $\Gamma_{1}$, centered at $O$, $AB$ and $CD$ are two unequal in length chords intersecting at $E$ inside $\Gamma_{1}$. A circle $\Gamma_{2}$, centered at $I$ is tangent to $\Gamma_{1}$ internally at $F$, and also tangent to $AB$ at $G$ and $CD$ at $H$. A line $l$ through $O$ intersects $AB$ and $CD$ at $P$ and $Q$ respectively such that $EP = EQ$. The line $EF$ intersects $l$ at $M$. Prove that the line through $M$ parallel to $AB$ is tangent to $\Gamma_{1}$.}
 
 
 % Mixtilinear - GM}
