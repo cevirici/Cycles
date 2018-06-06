@@ -167,12 +167,16 @@ $$A=B-C+m+n-1.$$}
 
 \dpp{CBD5} {Consider a $n \times n$ board of unit squares. We place several isosceles right triangles with length $1$ legs on the board such that no two intersect (except possibly on their hypotenuses), and each covers exactly half of one cell each. Each internal edge of the board is covered by exactly one right triangle. What's the maximum number of squares that don't contain triangles?}
 
+\dpp{CBD6} {Let a $P$-piece be a parallelogram with sidelengths $1$ and $\sqrt{2}$, such that one of its internal angles is $45^\circ$. Suppose we tile an $n$ by $n$ board with $P$-pieces. Show that the area left uncovered is at least $n$.}
+
 
 % Boards of Numbers - CBDN
 
 \dpp{CBDN1} {An $m$ by $n$ grid contains an integer in each cell. A 'shelf' is defined as a rectangle formed by cells of the grid such that every integer contained in it is strictly greater than the integer contained in any cell that meets the shelf at an edge or a vertex. What's the maximum number of shelves possible?}
 
 \dpp{CBDN2}{ 10000 nonzero digits are written in a 100-by-100 table, one digit per cell. From left to right, each row forms a 100-digit integer. From top to bottom, each column forms a 100-digit integer. So the rows and columns form 200 integers (each with 100 digits), not necessarily distinct. Prove that if at least 199 of these 200 numbers are divisible by 2013, then all of them are divisible by 2013.}
+
+\dpp{CBDN3}{Let $n$ be a positive integer. Each space of an $(n+2) \times (n+2)$ grid is filled with a real number each. A row or column is called good if we can find a polynomial $P$ of degree at most $n$ such that its entries ($a_1, a_2, ..., a_{n+2}$ in order) fulfil $P(k) = a_k$ for $1 \le k \le n+2$. Suppose all rows are good, and at least $n+1$ of the columns are good. Show that all the columns are good.}
 
 \dpp{CBDN3}{ Let $M$ be a matrix with $r$ rows and $c$ columns. Each entry of $M$ is a nonnegative integer. Let $a$ be the average of all $rc$ entries of $M$. If $r>(10a+10)^c$, prove that $M$ has two identical rows}
 
@@ -355,6 +359,9 @@ Prove that for every positive integer $N$, the total of non-negative loser integ
 
 \dpp{GG8}{ In acute $\triangle ABC$ with height $AD$, let $E,F$ be distinct points on $AD$ such that $DE=DF$ and $E$ is on segment $AD$. $(BEF)$ intersects segments $BC,BA$ again at $K,M(\neq B)$ respectively. $(CEF)$ intersects segments $CB,CA$ at $L,N(\neq C)$ respectively. Prove that $AD,KM,LN$ are concurrent}
 
+% http://tieba.baidu.com/p/5704056649
+\dpp{GG9}{$\triangle ABC$ has excircles $\Gamma_A$, $\Gamma_B$, $\Gamma_C$. Let the common external tangent to $\Gamma_A$ and $\Gamma_B$ (not $AB$) intersect $AC$ and $BC$ respectively at $A_2$ and $B_1$. Similarly define $B_2$, $C_1$, $C_2$, $A_1$. Show that the radical axis of $(A_1B_1C_1)$ and $(A_2B_2C_2)$ is $GI$, where $G$ and $I$ are the centroid and incenter of $ABC$ respectively.}
+
 
 % Tangent Circles - GT}
 
@@ -369,6 +376,9 @@ Prove that for every positive integer $N$, the total of non-negative loser integ
 There exists a circle $\omega_1$ touching $AB, AC$ and touching $\omega$ internally at $T$.
 There exists a circle $\omega_2$ touching $DB, DC$ and touching $\omega$ externally at $T$.
 Prove that the common external tangents of $\omega_1$ and $\omega_2$ intersect on $\omega$}
+
+% E
+\dpp{GMX2}{Let the $A$-mixtilinear incircle of a triangle $ABC$ meet its circumcircle at $K$, and $AB$ and $AC$ at $F$, $E$ respectively. Let the $(AEF)$ meet $(ABC)$ again at $S$, and let $M$ be the midpoint of $BC$. Show that $KSOM$ are concyclic.}
 
 
 % Circles are Tangent - GC}
@@ -386,9 +396,15 @@ Prove that the common external tangents of $\omega_1$ and $\omega_2$ intersect o
 
 \dpp{GSP1}{Triangle $ABC$ is inscribed in circle $\Omega$. The interior angle bisector of angle $A$ intersects side $BC$ and $\Omega$ at $D$ and $L$ (other than $A$), respectively. Let $M$ be the midpoint of side $BC$. The circumcircle of triangle $ADM$ intersects sides $AB$ and $AC$ again at $Q$ and $P$ (other than $A$), respectively. Let $N$ be the midpoint of segment $PQ$, and let $H$ be the foot of the perpendicular from $L$ to line $ND$. Prove that line $ML$ is tangent to the circumcircle of triangle $HMN$.}
 
+
 % Variable Points and Loci - GV}
 
 \dpp{GVR1}{ Circles $\Gamma_1,\Gamma_2$ intersect at points $P,Q$. $l$ is a variable line passing through $P$,, and it intersects $\Gamma_1,\Gamma_2$ again at $A,B(\neq P)$ respectively. Let the tangents at $A$ (to $\Gamma_1$) and $B$ (to $\Gamma_2$) intersect at $C$. Find the locus of the circumcenter of $\triangle ABC$ as $l$ is completely rotated around $P$}
+
+
+% Point lies on circumcircle - GPO
+
+\dpp{GPO1}{Let $ABC$ be a triangle with circumcenter $\Gamma$ and nine-point center $\gamma$. Let $X$ be a point on $\Gamma$ and let $Y$, $Z$ be on $\Gamma$ so that the midpoints of segments $XY$ and $XZ$ are on $\gamma$. Prove that the midpoint of $YZ$ is on $\gamma$.}
 
 
 % Weird Configurations - GW}
