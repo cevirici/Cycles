@@ -1,15 +1,56 @@
 \input{preamble.tex}
 \input{bank}
 \begin{document}
-\setDate{???}
+\setDate{6 June}
+\setCycle{1}
+
 \m{Everything}{
-    \foreach \n in {APL4,
+    \foreach \n in {
+APL4,
+AFEQ2,
+AIEM9,
 CBD4,
 CGM5,
+CBDN2,
+CBD3,
+CBD5,
 GTC2,
 GRL1,
+GCT2,
 NSQ6,
-NSQ5,
-AIEM9}{\p{\n}}
-}
+NPD8,
+NSQ5}{\pq{\n}
+}}
+
+\setDate{7 June}
+\m{Everything}{
+    \foreach \n in {GCT4,
+GSP1,
+GMX2,
+CBD2,
+CBD6,
+CBDN6,
+CBD7,
+AFEG4,
+AFEG5,
+AIEM10,
+NSQ1,
+NSQ2,
+NSQ7}{\pq{\n}
+}}
+
+\renewcommand{\arraystretch}{2}
+\begin{center}
+\begin{tabular}{r|ccc|ccc|}
+Who & \multicolumn{3}{|c|}{AM} & \multicolumn{3}{|c|}{PM}\\
+\hline
+PH & AFEG1 & GMX2 & CBD6 & GSP1 & NSQ1 & CBD7\\
+Lucas & GMX2 & AFEG5 & NSQ2 & CBDN6 & NSQ1 & GCT4\\
+KY & AFEG5 & CBD6 & NSQ7 & CBDN6 & CBD2 & CBD7\\
+YP & CBD6 & NSQ2 & GCT4 & GMX2 & CBD7 & AIEM10\\
+Joel & AFEG5 & CBD6 & NSQ7 & CBD7 & GCT4 & AIEM10\\
+ESC & GSP1 & AFEG5 & NSQ2 & AFEG4 & GMX2 & CBD2\\
+\end{tabular}
+\end{center}
+
 \end{document}
