@@ -15,8 +15,7 @@ for every real number $x$.}
 
 % Functional Equations - AFEG
 
-\dpp{AFEG1} {Given some real numbers $a$, $b$, find all functions $f: \mathbb{R}_+\rightarrow\mathbb{R}_+$ which satisfy
-\[f(f(x))+af(x)=b(a+b)x\]}
+\dpp{AFEG1} {<REDACTED>}
 
 \dpp{AFEG2} {Find all functions $f: \mathbb{R}\rightarrow\mathbb{R}$ such that
 \[f(x-f(y))=f(f(y))+xf(y)+f(x)-1\]}
@@ -27,8 +26,8 @@ $$f(2^x+2y) = 2^yf(f(x))f(y)$$}
 \dpp{AFEG4}{Find all functions $f:\mathbb{R}\rightarrow \mathbb{R}$ such that $f(0) \in \mathbb Q$ and
 \[f(x+f(y)^2 ) = {f(x+y)}^2.\]}
 
-\dpp{AFEG5}{Find all functions $f:\mathbb{R^+}\rightarrow\mathbb{R^+}$ such that
-$$\frac{x+f(y)}{xf(y)}=f(\frac{1}{y}+f(\frac{1}{x}))$$for all positive real numbers $x$ and $y$.}
+\dpp{AFEG5}{Find all functions $f:\mathbb{R}^+\rightarrow\mathbb{R}^+$ such that
+$$\frac{x+f(y)}{xf(y)}=f\left(\frac{1}{y}+f\left(\frac{1}{x}\right)\right)$$for all positive real numbers $x$ and $y$.}
 
 % Unusual FEs - AFEU
 
@@ -86,13 +85,13 @@ for all real numbers $x_i$, $y_i$.}
 
 \dpp{AIEM2} {Let $n$ be a positive integer. Let $a_1, a_2, ..., a_n, b_1,b_2,...,b_n$ be real numbers such that $a_i,b_i\in [-1,1]$ for all $1\le i\le n$. Prove that $$\left\lvert \prod_{i=1}^n a_i - \prod_{i=1}^n b_i\right\rvert \le \sum_{i=1}^n |a_i-b_i|$$}
 
-\dpp{AIEM3} {Let $n\ge 2$ and $x_1,...,x_n$ be non-negative reals summing to $n$. Determine the maxmimum value of $$\left(\sum_{i=1}^n \lfloor x_i \rfloor \right) \left(\sum_{i=1}^n \{x_i\} \right)$$}
+\dpp{AIEM3} {Let $n\ge 2$ and $x_1,...,x_n$ be non-negative reals such that $x_1+x_2+...+x_n = n$. Determine the maximum value of $$\left(\sum_{i=1}^n \lfloor x_i \rfloor \right) \left(\sum_{i=1}^n \{x_i\} \right)$$}
 
-\dpp{AIEM4} {Given a fixed natural $n\ge 2$, find the smallest real $c$ such that for any $a_1,a_@,...,a_n\ge 0$, there exists $i\in\{1,2,...,n\}$ satisfying $a_{i-1}+a_{i+1}\le ca_i$ where $a_0=a_{n+1}=0$.}
+\dpp{AIEM4} {Given a fixed natural $n\ge 2$, find the smallest real $c$ such that for any $a_1,a_2,...,a_n\ge 0$, there exists $i\in\{1,2,...,n\}$ satisfying $a_{i-1}+a_{i+1}\le ca_i$ where $a_0=a_{n+1}=0$.}
 
 \dpp{AIEM5} {Let $n\ge 2$, reals $a_1,...,a_n$ satisfy $\sum_{i=1}^n |a_i| + \lvert \sum_{i=1}^n a_i\rvert = 1$. Find the maximal and minimal possible value of $\sum_{i=1}^n a_i^2$.}
 
-\dpp{AIEM6} {Let $a_1,a_2,...,a_n$ be positive reals with sum $n$ ($n\ge 3$), and denote $s=a_1^2+...+a_n^2$. Prove that $$\sum_{i=1}^n \frac{1}{n-1+(n-2)(s-a_i^2} \le \frac{n}{(n-1)^2}$$}
+\dpp{AIEM6} {Let $a_1,a_2,...,a_n$ be positive reals with sum $n$ ($n\ge 3$), and denote $s=a_1^2+...+a_n^2$. Prove that $$\sum_{i=1}^n \frac{1}{n-1+(n-2)(s-a_i^2)} \le \frac{n}{(n-1)^2}$$}
 
 \dpp{AIEM7} {Let $x_1,x_2,...,x_n$ be $n$ distinct reals. Let $D=\max_{1\le i<j\le n} |x_i-x_j|$. Prove that there exists a permutation $y_1,y_2,...,y_n$ of $x_1,x_2,...,x_n$ such that $$\left\lvert \sum_{i=1}^n iy_i \right\rvert \ge \frac{n-1}{2}D $$}
 
@@ -103,7 +102,7 @@ for all real numbers $x_i$, $y_i$.}
 \dpp{AIEM10}{Suppose that $-1 \leq x_1,x_2,...,x_n \leq 1$ are real numbers such that $x_1 + x_2 +...+ x_n =0 $.
 Prove there exists a permutation $\sigma$ of $\{1,2,...,n\}$ such that for every $1\leq p \leq q \leq n$
 
-$|x_{\sigma(p)} +...+x_{ \sigma(q)}| < 2- \frac {1}{n}$
+$$\left\lvert x_{\sigma(p)} +...+x_{ \sigma(q)}\right \rvert < 2- \frac {1}{n}$$
 
 Also prove that the expression on the right side cannot be replaced by $2-\frac {4}{n}$}
 
@@ -371,7 +370,7 @@ Prove that for every positive integer $N$, the total number of non-negative lose
 
 \dpp{GG7}{ The circles $k_1$ and $k_2$ intersect at points $M$ and $N$. The line $l$ intersects with the circle $k_1$ at points $A$ and $C$ and with circle $k_2$ at points $B$ and $D$, so that points $A, B, C$ and $D$ are on the line $l$ in that order. Let $X$ be a point on line $MN$ such that the point $M$ is between points $X$ and $N$. Lines $AX$ and $BM$ intersect at point $P$ and lines $DX$ and $CM$ intersect at point $Q$. Prove that $PQ//l$}
 
-\dpp{GG8}{ In acute $\triangle ABC$ with height $AD$, let $E,F$ be distinct points on $AD$ such that $DE=DF$ and $E$ is on segment $AD$. $(BEF)$ intersects segments $BC,BA$ again at $K,M(\neq B)$ respectively. $(CEF)$ intersects segments $CB,CA$ at $L,N(\neq C)$ respectively. Prove that $AD,KM,LN$ are concurrent}
+\dpp{GG8}{In acute triangle $ABC$ with height $AD$, let $E,F$ be distinct points on $AD$ such that $DE=DF$ and $E$ is on segment $AD$. Circle $BEF$ intersects segments $BC,BA$ again at $K,M$ (distinct from $B$) respectively. Circle $CEF$ intersects segments $CB,CA$ at $L,N$ (distinct from $C$) respectively. Show that lines $AD,KM,LN$ are concurrent}
 
 % http://tieba.baidu.com/p/5704056649
 \dpp{GG9}{$\triangle ABC$ has excircles $\Gamma_A$, $\Gamma_B$, $\Gamma_C$. Let the common external tangent to $\Gamma_A$ and $\Gamma_B$ (not $AB$) intersect $AC$ and $BC$ respectively at $A_2$ and $B_1$. Similarly define $B_2$, $C_1$, $C_2$, $A_1$. Show that the radical axis of $(A_1B_1C_1)$ and $(A_2B_2C_2)$ is $GI$, where $G$ and $I$ are the centroid and incenter of $ABC$ respectively.}
@@ -392,7 +391,7 @@ There exists a circle $\omega_2$ touching $DB, DC$ and touching $\omega$ externa
 Prove that the common external tangents of $\omega_1$ and $\omega_2$ intersect on $\omega$}
 
 % E
-\dpp{GMX2}{Let the $A$-mixtilinear incircle of a triangle $ABC$ meet its circumcircle at $K$, and $AB$ and $AC$ at $F$, $E$ respectively. Let the $(AEF)$ meet $(ABC)$ again at $S$, and let $M$ be the midpoint of $BC$. Show that $KSOM$ are concyclic.}
+\dpp{GMX2}{Let the $A$-mixtilinear incircle of a triangle $ABC$ meet its circumcircle at $K$, and $AB$ and $AC$ at $F$, $E$ respectively. Let the $(AEF)$ meet $(ABC)$ again at $S$, and let $M$ be the midpoint of $BC$. Show that $K,S,O,M$ are concyclic.}
 
 
 % Circles are Tangent - GC}
@@ -401,7 +400,8 @@ Prove that the common external tangents of $\omega_1$ and $\omega_2$ intersect o
 
 \dpp{GCT2}{Suppose $ABCD$ is a parallelogram. Consider circles $w_1$ and $w_2$ such that $w_1$ is tangent to segments $AB$ and $AD$ and $w_2$ is tangent to segments $BC$ and $CD$. Suppose that there exists a circle which is tangent to lines $AD$ and $DC$ and externally tangent to $w_1$ and $w_2$. Prove that there exists a circle which is tangent to lines $AB$ and $BC$ and also externally tangent to circles $w_1$ and $w_2$.}
 
-\dpp{GCT3}{Given $\triangle ABC$ with altitude $AD$, let $G$ be the midpoint of $AD$. Let $X,Y$ be the feet of the altitudes from $D$ to $BG,CG$ respectively, and let $BY,CX$ intersect at $Z$. Prove that $\odot(XYZ), \odot(AD)$ are tangent.}
+\dpp{GCT3}{Let $ABC$ be a triangle with $\angle BAC = 90^{\circ}$, and let $D$ be the foot of the altitude from $A$. Let $\omega$ be the circle centered at $A$ passing through $D$. Let $X$ be the foot of the perpendicular from $D$ to $AB$. Similarly, let $Y$ be the foot of the perpendicular from $D$ to $AC$. Let $Z$ be the intersection of $BY$ and $CX$. Show that $\omega$ is tangent to circle $XYZ$.
+}
 
 \dpp{GCT4}{Let $ \omega $ be the incircle of the triangle $ABC$ and with centre $I$. Let $\Gamma $ be the circumcircle of the triangle $AIB$. Circles $ \omega $ and $ \Gamma $ intersect at the point $X$ and $Y$. Let $Z$ be the intersection of the common tangents of the circles $\omega$ and $\Gamma$. Show that the circumcircle of the triangle $XYZ$ is tangent to the circumcircle of the triangle $ABC$.}
 
@@ -511,6 +511,17 @@ $$x = (q+1)^{\alpha_1}(q+2)^{\alpha_2}...(q+n)^{\alpha_n}$$
 \dpp{NPD8}{Find all primes $p$ and $q$ such that $3p^{q-1}+1$ divides $11^p+17^p$.}
 
 
+% Diophantines - NDP
+
+% Source: https://artofproblemsolving.com/community/c6h88312p515081
+\dpp{NDP1}{Find all nonnegative integers $m, n, a, b$ such that $$a^mb^n=(a+b)^2+1$$}
+
+\dpp{NDP2}{Find all positive integers $a$, $b$, $c$ such that $$19^x+7^y=z^3$$}
+
+\dpp{NDP3}{Find all integers $x, y, z$ such that $28^x = 19^y + 87^z$}
+
+\dpp{NDP4}{Find all positive integers $x, y$ such that $25x^4 - 10x^2y^2+y^4 = 16$}
+
 % Divided Differences - ND}
 
 \dpp{NDD1}{ Let $p$ be an odd prime and $a_1, a_2, ..., a_n$ be integers. Prove that the following two conditions are equivalent:
@@ -591,6 +602,9 @@ $$n\mid P^n(x)-x$$}
 
 \dpp{CNT4}{ Let $n$ be a positive integer such that there exists a positive integer less than $\sqrt{n}$ that does not divide $n$. Let $(a_1,...,a_n)$ be an arbitrary permutation of $1,2,...,n$. Let $a_{i_1}<...<a_{i_k}$ be its maximal increasing subsequence and let $a_{j_1}>...>a_{j_l}$ be its maximal decreasing subsequence. Prove that at least one of these two subsequences contains at least one number that does not divide $n$}
 
+\dpp{CNT5}{ A positive integer is written on the whiteboard. At each step, we may either multiply it by another positive integer, or eliminate any zeroes in its decimal representation. Show that, beginning from any positive integer, there exists a finite sequence of such steps that can reduce it to a single-digit number.}
+
+\dpp{CNT6}{ We'll call a positive integer with distinct digits \textit{bright} if it's either less than $10$, or it has a bright factor that can be obtained by removing one of the digits of the original number. What's the largest bright number}
 
 % Construction - NC}
 
@@ -620,14 +634,11 @@ This number $k$ is called the \textit{weight} of $n$.
 
 (b) Find (in closed form) the difference between the number of positive integers at most $2^{2017}$ with even weight and the number of positive integers at most $2^{2017}$ with odd weight.}
 
-
 % Unclassified
 
 \dpp{Unclassified1}{ For every positive integer $n$, let $s_2(n)$ denote the sum of digits when $n$ is expressed in binary. Show that the set
 $$S = \left\{ \frac{a}{b} \ \middle\vert \ \frac{a}{b}=\frac{s_2(a)}{s_2(b)},\ a,b\in \mathbb{N} \right\}$$ 
 has infinitely many elements}
-
-\dpp{Unclassified2}{ We'll call a positive integer with distinct digits \textit{bright} if it's either less than $10$, or it has a bright factor that can be obtained by removing one of the digits of the original number. What's the largest bright number}
 
 \dpp{Unclassified3}{ Find all integers $k\ge 5$ for which there is a positive integer $n$ with exactly $k$ positive divisors $1=d_1<d_2<...<d_k=n$, and $$d_2d_3+d_3d_5+d_5d_2=n$$}
 
@@ -635,3 +646,58 @@ has infinitely many elements}
 Let $m,k$ be natural numbers satisfying $m\ge 2k$. Define $A$ to be the following set:
 $$A=\left\{ \bar{a} = (a_1,...,a_n) \mid S(\bar{A})=k, a_i\in \mathbb{Z}, |a_i|\le m \text{ for all } i=1,...,n\right\}$$
 Prove that $$\frac{\sum_{\bar{a}\in A} T(\bar{a})}{|A|}\le k$$}
+
+
+% Shortlists
+
+\dpp{SLA3} {Let $S$ be a finite set, and let $\mathcal{A}$ be the set of all functions from $S$ to $S$. Let $f$ be an element of $\mathcal{A}$, and let $T = f(S)$ be the image of $S$ under $f$. Suppose that $f \circ g \circ f \ne g \circ f \circ g$ for every $g$ in $\mathcal{A}$ with $g \ne f$. Show that $f(T) = T.$}
+
+\dpp{SLC2}{Let $n$ be a positive integer. Define a \textit{chameleon} to be any sequence of $3n$ letters, with exactly $n$ occurrences of each of the letters $a$, $b$, and $c$. Define a \textit{swap} to be the transposition of two adjacent letters in a chameleon. Prove that for any chameleon $X$, there exists a chameleon $Y$ such that $X$ cannot be changed to $Y$ using fewer than $3n^2/2$ swaps.}
+
+\dpp{SLN4}{Call a rational number \textit{short} if it has finitely many digits in its decimal expansion. For a positive integer $m$, we say that a positive integer $m$\textit{-tastic} if there exists a number $c\in\{1,2,3,...,2017\}$ such that $\displaystyle\frac{10^t-1}{c\dot m}$ is short, and such that $\displaystyle\frac{10^k}{c\cdot m}$ is not short for any $1\le k<t$. Let $S(m)$ denote the set of $m$-tastic numbers. Consider $S(m)$ for $m=1,2,...$. What is the maximum number of elements in $S(m)$?}
+
+\dpp{SLC7}{For any finite sets $X$ and $Y$ of positive integers, denote by $f_X(k)$ the $k$-th smallest positive integer not in $X$, and let $$X\ast Y = X \cup \{f_X(y):y\in Y\}$$ Let $A$ be a set of $a>0$ positive integers, and let $B$ be a set of $b>0$ positive integers. Prove that if $A\ast B=B\ast A$, then $$\underbrace{A\ast(A\ast\dots\ast(A\ast(A\ast A))\dots )}_{A\text{ appears }b\text{ times}}=\underbrace{B\ast(B\ast\dots\ast(B\ast(B\ast B))\dots )}_{B\text{ appears }a\text{ times}}.$$}
+
+% Siah Yong's Combi Gauntlet
+% Easy: 11(morale-booster), 3, 6, 9, 8, 10
+% Medium: 1, 2, 12
+% Not like this: 4, 5, 7
+\dpp{SCG1}{On the spherical planet Baul, there lives a square who travels at speed $u$. One day, a spaceship that travels at speed $v$ flies around above Baul and tries to find the square. Prove that if $\displaystyle\frac{v}{u}>10$, then there exists a method for the spaceship to find the square regardless of how the square attempts to hide.}
+
+\dpp{SCG2}{We have a closed path on the vertices of a $n$×$n$ square which passes through each vertice exactly once. Prove that there exists two adjacent vertices such that if we cut the path at these points, the length of each of the two resulting pieces is at least a quarter of the total path length.}
+
+\dpp{SCG3}{Arisu and Bob-chan play the following game: They start with non-empty piles of coins. Taking turns, with Arisu playing first, each player choose a pile with an even number of coins and moves half of the coins of this pile to the other pile. The game ends if a player cannot move, in which case the other player wins.
+
+Determine all pairs $(a,b)$ of positive integers such that if initially the two piles have $a$ and $b$ coins respectively, then Bob-chan has a winning strategy.}
+
+\dpp{SCG4}{Let $m$ and $n$ be positive integers such that $m \le \frac{3}{2}n$ and $S = \left\{ 1,2, \ldots , n \right\}$ and
+\[ A_1 , A_2 , \ldots , A_m \]be different subsets of $S$. Prove that there is $k \in S$ with the following property; let $B_j = A_j \setminus \left\{ k \right\}$ then in the set
+\[ \left\{ B_1, B_2, \ldots, B_m \right \} \]at least $m-1$ elements are different from each other.}
+
+\dpp{SCG5}{There are $n$ children sitting around a round table, each with a hat on their head. A positive integer is written on each child's hat. No child knows the number on their own hat (and they cannot see it) but everyone can see everybody else's number.
+
+The childrens' teacher then writes $k$ distinct positive integers on the blackboard and announces that one of them is the sum of the numbers written on all of the hats.
+
+Then the teacher asks one of the children, "Do you know the sum of all of the numbers on the hats?" If the answer is "Yes", the teacher stops asking questions and the process terminates. Otherwise, if the answer is "No", then the teacher asks the next child (the neighbor to the right of the child the teacher just asked) the same question, and repeats this process.
+
+Given that the children are intelligent and truthful, prove that if $k\le n$ then the above process terminates.}
+
+\dpp{SCG6}{Fix an integer $n \geq 2$. An $n\times n$ sieve is an $n\times n$ array with $n$ cells removed so that exactly one cell is removed from every row and every column. A stick is a $1\times k$ or $k\times 1$ array for any positive integer $k$. For any sieve $A$, let $m(A)$ be the minimal number of sticks required to partition $A$. Find all possible values of $m(A)$, as $A$ varies over all possible $n\times n$ sieves.}
+
+\dpp{SCG7}{The cells of a square $2011 \times 2011$ array are labelled with the integers $1,2,\ldots, 2011^2$, in such a way that every label is used exactly once. We then identify the left-hand and right-hand edges, and then the top and bottom, in the normal way to form a torus (the surface of a doughnut).
+
+Determine the largest positive integer $M$ such that, no matter which labelling we choose, there exist two neighbouring cells with the difference of their labels at least $M$.}
+
+\dpp{SCG8}{$n$ balls numbered 1 to $n$ are arranged in a circle in order. Each ball is red or blue. At any time, two adjacent balls of the same color may be removed, and the gap is closed so that the balls still form a (smaller) circle. For how many of the $2^n$ possible configurations is it possible to remove all $n$ balls?}
+
+\dpp{SCG9}{There are 3 heaps with $100,101,102$ stones. Ilya and Kostya play next game. Every step they take one stone from some heap, but not from same, that was on previous step. They make his steps in turn, Ilya make first step. Player loses if can not make step. Who has winning strategy?}
+
+\dpp{SCG10}{At a mathematical competition $n$ students work on $6$ problems each one with three possible answers. After the competition, the Jury found that for every two students the number of the problems, for which these students have the same answers, is $0$ or $2$. Find the maximum possible value of $n$.}
+
+\dpp{SCG11}{In a set of natural numbers, $A= \{ 1,2,3,...,6n \}$, exactly $4n$ of them are painted red.
+
+Prove that there exists $3n$ consecutive natural numbers from $A$, such that exactly $2n$ of them are red.}
+
+\dpp{SCG12}{Let $n>1$ be a positive integer and $X$ be a set containing $n$ elements. $A_1,A_2,...,A_{101}$ are subsets of $X$ such that the union of any 50 of them has more than $\displaystyle\frac{50}{51}n$ elements.
+
+Prove that among the given subsets it is possible to choose three, such that every two of them have a non-empty intersection.}
